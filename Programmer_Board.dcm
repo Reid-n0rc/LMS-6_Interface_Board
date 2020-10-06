@@ -1,0 +1,15 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP 27R
+D RES SMD 27 OHM 1% 1/8W 0805
+K RES SMD 27 OHM 1% 1/8W 0805
+F https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1773204&DocType=DS&DocLang=English
+$ENDCMP
+#
+$CMP RES_0805
+D RES SMD 27 OHM 1% 1/8W 0805
+K RES SMD 27 OHM 1% 1/8W 0805
+F https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1773204&DocType=DS&DocLang=English
+$ENDCMP
+#
+#End Doc Library
