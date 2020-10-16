@@ -35,26 +35,6 @@ F 3 "https://www.tracopower.com/products/tec2wi.pdf" H 5000 3300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L dk_Fixed-Inductors:13R106C L?
-U 1 1 5F8D7730
-P 3250 3600
-F 0 "L?" H 3250 3380 60  0000 C CNN
-F 1 "13R106C" H 3250 3486 60  0000 C CNN
-F 2 "digikey-footprints:Inductor_13R106C" H 3450 3800 60  0001 L CNN
-F 3 "https://www.murata-ps.com/data/magnetics/kmp_1300r.pdf" H 3450 3900 60  0001 L CNN
-F 4 "811-2058-ND" H 3450 4000 60  0001 L CNN "Digi-Key_PN"
-F 5 "13R106C" H 3450 4100 60  0001 L CNN "MPN"
-F 6 "Inductors, Coils, Chokes" H 3450 4200 60  0001 L CNN "Category"
-F 7 "Fixed Inductors" H 3450 4300 60  0001 L CNN "Family"
-F 8 "https://www.murata-ps.com/data/magnetics/kmp_1300r.pdf" H 3450 4400 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/murata-power-solutions-inc/13R106C/811-2058-ND/1998245" H 3450 4500 60  0001 L CNN "DK_Detail_Page"
-F 10 "FIXED IND 10MH 85MA 23.8 OHM TH" H 3450 4600 60  0001 L CNN "Description"
-F 11 "Murata Power Solutions Inc." H 3450 4700 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 3450 4800 60  0001 L CNN "Status"
-	1    3250 3600
-	-1   0    0    1   
-$EndComp
-$Comp
 L Device:C C?
 U 1 1 5F8D9973
 P 2750 3750
@@ -114,16 +94,33 @@ Wire Wire Line
 	3700 4000 4350 4000
 Connection ~ 4350 4000
 Wire Wire Line
-	3450 3600 3700 3600
-Connection ~ 3700 3600
-Wire Wire Line
-	3050 3600 2750 3600
-Wire Wire Line
 	2750 3900 2750 4000
 Wire Wire Line
 	2750 4000 3700 4000
 Connection ~ 3700 4000
 Wire Wire Line
 	2550 3600 2750 3600
+$Comp
+L SamacSys_Parts:TCK-154 L?
+U 1 1 5F89924C
+P 2850 3600
+F 0 "L?" H 3250 3825 50  0000 C CNN
+F 1 "TCK-154" H 3250 3734 50  0000 C CNN
+F 2 "TCK154" H 3500 3650 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/TCK-154.pdf" H 3500 3550 50  0001 L CNN
+F 4 "Fixed Inductors" H 3500 3450 50  0001 L CNN "Description"
+F 5 "3.7" H 3500 3350 50  0001 L CNN "Height"
+F 6 "495-TCK-154" H 3500 3250 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/TRACO-Power/TCK-154?qs=w%2Fv1CP2dgqrcxTwKbnHwhQ%3D%3D" H 3500 3150 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Traco Power" H 3500 3050 50  0001 L CNN "Manufacturer_Name"
+F 9 "TCK-154" H 3500 2950 50  0001 L CNN "Manufacturer_Part_Number"
+	1    2850 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 3600 3700 3600
+Connection ~ 3700 3600
+Wire Wire Line
+	2850 3600 2750 3600
 Connection ~ 2750 3600
 $EndSCHEMATC

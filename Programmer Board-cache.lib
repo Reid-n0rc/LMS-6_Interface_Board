@@ -258,6 +258,75 @@ X Pin_9 9 -250 1600 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
+# SamacSys_Parts_TCK-154
+#
+DEF SamacSys_Parts_TCK-154 L 0 30 Y Y 1 F N
+F0 "L" 650 250 50 H V L CNN
+F1 "SamacSys_Parts_TCK-154" 650 150 50 H V L CNN
+F2 "TCK154" 650 50 50 H I L CNN
+F3 "https://componentsearchengine.com/Datasheets/1/TCK-154.pdf" 650 -50 50 H I L CNN
+F4 "Fixed Inductors" 650 -150 50 H I L CNN "Description"
+F5 "3.7" 650 -250 50 H I L CNN "Height"
+F6 "495-TCK-154" 650 -350 50 H I L CNN "Mouser Part Number"
+F7 "https://www.mouser.co.uk/ProductDetail/TRACO-Power/TCK-154?qs=w%2Fv1CP2dgqrcxTwKbnHwhQ%3D%3D" 650 -450 50 H I L CNN "Mouser Price/Stock"
+F8 "Traco Power" 650 -550 50 H I L CNN "Manufacturer_Name"
+F9 "TCK-154" 650 -650 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+A 250 -2 50 1777 -23 0 1 6 N 300 0 200 0
+A 350 -2 50 1777 -23 0 1 6 N 400 0 300 0
+A 450 -2 50 1777 -23 0 1 6 N 500 0 400 0
+A 550 -2 50 1777 -23 0 1 6 N 600 0 500 0
+X ~ 1 0 0 200 R 50 50 0 0 P
+X ~ 2 800 0 200 L 50 50 0 0 P
+ENDDRAW
+ENDDEF
+#
+# dk_Banana-and-Tip-Connectors-Jacks-Plugs_105-1102-001
+#
+DEF dk_Banana-and-Tip-Connectors-Jacks-Plugs_105-1102-001 J 0 40 N N 1 F N
+F0 "J" -50 50 50 H V R CNN
+F1 "dk_Banana-and-Tip-Connectors-Jacks-Plugs_105-1102-001" 50 -100 50 H V L CNN
+F2 "digikey-footprints:Test_Jack_Horiz" 200 200 60 H I L CNN
+F3 "https://belfuse.com/resources/Johnson/drawings/dr-1051101001.pdf" 200 300 60 H I L CNN
+F4 "J576-ND" 200 400 60 H I L CNN "Digi-Key_PN"
+F5 "105-1102-001" 200 500 60 H I L CNN "MPN"
+F6 "Connectors, Interconnects" 200 600 60 H I L CNN "Category"
+F7 "Banana and Tip Connectors - Jacks, Plugs" 200 700 60 H I L CNN "Family"
+F8 "https://belfuse.com/resources/Johnson/drawings/dr-1051101001.pdf" 200 800 60 H I L CNN "DK_Datasheet_Link"
+F9 "/product-detail/en/cinch-connectivity-solutions-johnson/105-1102-001/J576-ND/241121" 200 900 60 H I L CNN "DK_Detail_Page"
+F10 "CONN TIP JACK SOLDER RED" 200 1000 60 H I L CNN "Description"
+F11 "Cinch Connectivity Solutions Johnson" 200 1100 60 H I L CNN "Manufacturer"
+F12 "Active" 200 1200 60 H I L CNN "Status"
+DRAW
+C 0 0 50 0 1 0 N
+C 0 0 25 1 1 0 N
+X ~ 1 0 -150 100 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# dk_Banana-and-Tip-Connectors-Jacks-Plugs_105-1103-001
+#
+DEF dk_Banana-and-Tip-Connectors-Jacks-Plugs_105-1103-001 J 0 40 N N 1 F N
+F0 "J" -50 50 50 H V R CNN
+F1 "dk_Banana-and-Tip-Connectors-Jacks-Plugs_105-1103-001" 50 -100 50 H V L CNN
+F2 "digikey-footprints:Test_Jack_Horiz" 200 200 60 H I L CNN
+F3 "https://belfuse.com/resources/Johnson/drawings/dr-1051101001.pdf" 200 300 60 H I L CNN
+F4 "J577-ND" 200 400 60 H I L CNN "Digi-Key_PN"
+F5 "105-1103-001" 200 500 60 H I L CNN "MPN"
+F6 "Connectors, Interconnects" 200 600 60 H I L CNN "Category"
+F7 "Banana and Tip Connectors - Jacks, Plugs" 200 700 60 H I L CNN "Family"
+F8 "https://belfuse.com/resources/Johnson/drawings/dr-1051101001.pdf" 200 800 60 H I L CNN "DK_Datasheet_Link"
+F9 "/product-detail/en/cinch-connectivity-solutions-johnson/105-1103-001/J577-ND/241122" 200 900 60 H I L CNN "DK_Detail_Page"
+F10 "CONN TIP JACK SOLDER BLACK" 200 1000 60 H I L CNN "Description"
+F11 "Cinch Connectivity Solutions Johnson" 200 1100 60 H I L CNN "Manufacturer"
+F12 "Active" 200 1200 60 H I L CNN "Status"
+DRAW
+C 0 0 25 1 1 0 N
+C 0 0 50 1 1 0 N
+X ~ 1 0 -150 100 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
 # dk_Ferrite-Beads-and-Chips_MPZ2012S601AT000
 #
 DEF dk_Ferrite-Beads-and-Chips_MPZ2012S601AT000 FB 0 40 Y Y 1 F N
@@ -280,40 +349,6 @@ P 2 0 1 0 50 0 100 0 N
 P 5 0 1 0 -50 100 -100 50 50 -100 100 -50 -50 100 f
 X ~ 1 -200 0 100 R 50 50 1 1 P
 X ~ 2 200 0 100 L 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# dk_Fixed-Inductors_13R106C
-#
-DEF dk_Fixed-Inductors_13R106C L 0 40 Y Y 1 F N
-F0 "L" -150 100 60 H V C CNN
-F1 "dk_Fixed-Inductors_13R106C" 125 -75 60 H V C CNN
-F2 "digikey-footprints:Inductor_13R106C" 200 200 60 H I L CNN
-F3 "https://www.murata-ps.com/data/magnetics/kmp_1300r.pdf" 200 300 60 H I L CNN
-F4 "811-2058-ND" 200 400 60 H I L CNN "Digi-Key_PN"
-F5 "13R106C" 200 500 60 H I L CNN "MPN"
-F6 "Inductors, Coils, Chokes" 200 600 60 H I L CNN "Category"
-F7 "Fixed Inductors" 200 700 60 H I L CNN "Family"
-F8 "https://www.murata-ps.com/data/magnetics/kmp_1300r.pdf" 200 800 60 H I L CNN "DK_Datasheet_Link"
-F9 "/product-detail/en/murata-power-solutions-inc/13R106C/811-2058-ND/1998245" 200 900 60 H I L CNN "DK_Detail_Page"
-F10 "FIXED IND 10MH 85MA 23.8 OHM TH" 200 1000 60 H I L CNN "Description"
-F11 "Murata Power Solutions Inc." 200 1100 60 H I L CNN "Manufacturer"
-F12 "Active" 200 1200 60 H I L CNN "Status"
-DRAW
-A -94 14 48 -1631 37 0 1 0 N -140 0 -47 17
-A -67 14 20 -113 1633 0 1 0 N -47 10 -87 20
-A -47 10 41 1660 -1040 0 1 0 N -87 20 -57 -30
-A -42 13 46 -1104 -39 0 1 0 N -58 -30 2 10
-A -17 14 20 -113 1633 0 1 0 N 3 10 -37 20
-A 3 10 41 1660 -1040 0 1 0 N -37 20 -7 -30
-A 8 13 46 -1104 -39 0 1 0 N -8 -30 52 10
-A 33 14 20 -113 1633 0 1 0 N 53 10 13 20
-A 53 10 41 1660 -1040 0 1 0 N 13 20 43 -30
-A 58 13 46 -1104 -39 0 1 0 N 42 -30 102 10
-A 83 14 20 -113 1633 0 1 0 N 103 10 63 20
-A 102 9 40 -130 1687 0 1 0 N 141 0 62 17
-X ~ 1 -200 0 59 R 50 50 1 1 P
-X ~ 2 200 0 59 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #

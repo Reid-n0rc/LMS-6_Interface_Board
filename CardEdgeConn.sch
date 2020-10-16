@@ -436,5 +436,5 @@ Text HLabel 4500 4800 2    50   Input ~ 0
 Wire Wire Line
 	4500 4800 3550 4800
 Text Notes 2900 5150 0    50   ~ 0
-Jumper Sullins Connector Solutions NPC02SXON-RC
+Jumper Sullins Connector Solutions NPC02SXON-RC\nJumper 1-2 to power from LMS6 Battery\nJumper 2-3 to power from exteral power
 $EndSCHEMATC

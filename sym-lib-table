@@ -151,4 +151,5 @@
   (lib (name dk_USB-DVI-HDMI-Connectors)(type Legacy)(uri "C:/Users/Reid/Documents/KiCad Projects/Symbols/digikey-kicad-library-master/digikey-symbols/dk_USB-DVI-HDMI-Connectors.lib")(options "")(descr ""))
   (lib (name Programmer_Board)(type Legacy)(uri ${KIPRJMOD}/Programmer_Board.lib)(options "")(descr ""))
   (lib (name power_LMS6)(type Legacy)(uri ${KIPRJMOD}/power_LMS6.lib)(options "")(descr ""))
+  (lib (name SamacSys_Parts)(type Legacy)(uri "C:/Users/Reid/Documents/KiCad Projects/Symbols/SamacSys_Parts.lib")(options "")(descr ""))
 )
