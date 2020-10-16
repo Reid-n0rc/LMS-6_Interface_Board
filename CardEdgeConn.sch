@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 4
+Sheet 4 4
 Title ""
 Date ""
 Rev ""
@@ -39,8 +39,6 @@ Wire Wire Line
 	3400 1700 4350 1700
 Wire Wire Line
 	3400 2000 4350 2000
-Wire Wire Line
-	3400 2400 4350 2400
 Wire Wire Line
 	3400 2700 4350 2700
 Wire Wire Line
@@ -81,8 +79,6 @@ Wire Wire Line
 	2250 2000 2900 2000
 Wire Wire Line
 	2250 2200 2900 2200
-Wire Wire Line
-	2250 2300 2900 2300
 Wire Wire Line
 	1500 2600 1500 2700
 $Comp
@@ -219,8 +215,8 @@ U 1 1 5F7D09C4
 P 3150 3200
 AR Path="/5F7D09C4" Ref="J?"  Part="1" 
 AR Path="/5F7BE189/5F7D09C4" Ref="J?"  Part="1" 
-AR Path="/5F7C6408/5F7D09C4" Ref="J?"  Part="1" 
-F 0 "J?" H 3150 5425 50  0000 C CNN
+AR Path="/5F7C6408/5F7D09C4" Ref="J5"  Part="1" 
+F 0 "J5" H 3150 5425 50  0000 C CNN
 F 1 "5-5530843-4" H 3150 5334 50  0000 C CNN
 F 2 "" H 3150 3200 50  0001 C CNN
 F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=5530843&DocType=Customer+Drawing&DocLang=English" H 3150 3200 50  0001 C CNN
@@ -237,7 +233,7 @@ Text HLabel 4350 1700 2    50   Input ~ 0
 U21.20-DCLK
 Text HLabel 4350 2000 2    50   Input ~ 0
 SW1.1
-Text HLabel 4350 2400 2    50   Input ~ 0
+Text HLabel 5850 3700 2    50   Input ~ 0
 GPS.RXD
 Text HLabel 4350 2600 2    50   Input ~ 0
 U22.3
@@ -247,7 +243,7 @@ Text HLabel 4350 2900 2    50   Input ~ 0
 SW1.3
 Text HLabel 4350 3000 2    50   Input ~ 0
 U3.18
-Text HLabel 2250 2300 0    50   Input ~ 0
+Text HLabel 950  3700 0    50   Input ~ 0
 GPS.TXD
 Text HLabel 2250 2200 0    50   Input ~ 0
 U3.19
@@ -262,10 +258,10 @@ ST7-RESET
 Text HLabel 2250 1300 0    50   Input ~ 0
 ST7-ICCCLK
 $Comp
-L Connector_Generic:Conn_02x05_Odd_Even J?
+L Connector_Generic:Conn_02x05_Odd_Even J7
 U 1 1 5F836EA0
 P 8300 2650
-F 0 "J?" H 8350 3067 50  0000 C CNN
+F 0 "J7" H 8350 3067 50  0000 C CNN
 F 1 "302-S101" H 8350 2976 50  0000 C CNN
 F 2 "digikey-footprints:PinHeader_2x5_P2.54mm_Drill1.2mm" H 8300 2650 50  0001 C CNN
 F 3 "http://www.on-shore.com/wp-content/uploads/2018/04/302-SXX1.pdf" H 8300 2650 50  0001 C CNN
@@ -288,8 +284,8 @@ U 1 1 5F83EE0B
 P 7550 2650
 AR Path="/5F83EE0B" Ref="#PWR?"  Part="1" 
 AR Path="/5F7BE189/5F83EE0B" Ref="#PWR?"  Part="1" 
-AR Path="/5F7C6408/5F83EE0B" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 7550 2500 50  0001 C CNN
+AR Path="/5F7C6408/5F83EE0B" Ref="#PWR015"  Part="1" 
+F 0 "#PWR015" H 7550 2500 50  0001 C CNN
 F 1 "VDD" H 7565 2823 50  0000 C CNN
 F 2 "" H 7550 2650 50  0001 C CNN
 F 3 "" H 7550 2650 50  0001 C CNN
@@ -306,8 +302,8 @@ U 1 1 5F840CF8
 P 8000 3000
 AR Path="/5F840CF8" Ref="#PWR?"  Part="1" 
 AR Path="/5F7BE189/5F840CF8" Ref="#PWR?"  Part="1" 
-AR Path="/5F7C6408/5F840CF8" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 8000 2750 50  0001 C CNN
+AR Path="/5F7C6408/5F840CF8" Ref="#PWR016"  Part="1" 
+F 0 "#PWR016" H 8000 2750 50  0001 C CNN
 F 1 "GND" H 8005 2827 50  0000 C CNN
 F 2 "" H 8000 3000 50  0001 C CNN
 F 3 "" H 8000 3000 50  0001 C CNN
@@ -334,8 +330,8 @@ U 1 1 5F845227
 P 8650 3000
 AR Path="/5F845227" Ref="#PWR?"  Part="1" 
 AR Path="/5F7BE189/5F845227" Ref="#PWR?"  Part="1" 
-AR Path="/5F7C6408/5F845227" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 8650 2750 50  0001 C CNN
+AR Path="/5F7C6408/5F845227" Ref="#PWR017"  Part="1" 
+F 0 "#PWR017" H 8650 2750 50  0001 C CNN
 F 1 "GND" H 8655 2827 50  0000 C CNN
 F 2 "" H 8650 3000 50  0001 C CNN
 F 3 "" H 8650 3000 50  0001 C CNN
@@ -388,8 +384,8 @@ U 1 1 5F8BD332
 P 4050 4500
 AR Path="/5F8BD332" Ref="#PWR?"  Part="1" 
 AR Path="/5F7BE189/5F8BD332" Ref="#PWR?"  Part="1" 
-AR Path="/5F7C6408/5F8BD332" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 4050 4350 50  0001 C CNN
+AR Path="/5F7C6408/5F8BD332" Ref="#PWR014"  Part="1" 
+F 0 "#PWR014" H 4050 4350 50  0001 C CNN
 F 1 "+9V" H 4065 4673 50  0000 C CNN
 F 2 "" H 4050 4500 50  0001 C CNN
 F 3 "" H 4050 4500 50  0001 C CNN
@@ -404,8 +400,8 @@ U 1 1 5F8C0163
 P 3750 4500
 AR Path="/5F8C0163" Ref="#PWR?"  Part="1" 
 AR Path="/5F7BE189/5F8C0163" Ref="#PWR?"  Part="1" 
-AR Path="/5F7C6408/5F8C0163" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 3750 4350 50  0001 C CNN
+AR Path="/5F7C6408/5F8C0163" Ref="#PWR013"  Part="1" 
+F 0 "#PWR013" H 3750 4350 50  0001 C CNN
 F 1 "+BATT" H 3765 4673 50  0000 C CNN
 F 2 "" H 3750 4500 50  0001 C CNN
 F 3 "" H 3750 4500 50  0001 C CNN
@@ -419,10 +415,10 @@ Wire Wire Line
 Wire Wire Line
 	3750 4600 3550 4600
 $Comp
-L Connector_Generic:Conn_01x03 J?
+L Connector_Generic:Conn_01x03 J6
 U 1 1 5F8CD356
 P 3350 4700
-F 0 "J?" H 3268 5017 50  0000 C CNN
+F 0 "J6" H 3268 5017 50  0000 C CNN
 F 1 "Conn_01x03" H 3268 4926 50  0000 C CNN
 F 2 "" H 3350 4700 50  0001 C CNN
 F 3 "~" H 3350 4700 50  0001 C CNN
@@ -437,4 +433,60 @@ Text Notes 2900 5150 0    50   ~ 0
 Jumper Sullins Connector Solutions NPC02SXON-RC\nJumper 1-2 to power from LMS6 Battery\nJumper 2-3 to power from exteral power
 Wire Wire Line
 	1500 2700 2900 2700
+$Comp
+L SparkFun-Jumpers:JUMPER-SMT_3_1-NC JP1
+U 1 1 5F8B7A4C
+P 1300 3700
+F 0 "JP1" H 1404 3795 45  0000 L CNN
+F 1 "JUMPER-SMT_3_1-NC" H 1404 3711 45  0000 L CNN
+F 2 "SMT-JUMPER_3_1-NC" H 1300 3950 20  0001 C CNN
+F 3 "" V 1300 3645 60  0001 C CNN
+F 4 "XXX-00000" H 1404 3616 60  0000 L CNN "PROD_ID"
+	1    1300 3700
+	1    0    0    1   
+$EndComp
+$Comp
+L SparkFun-Jumpers:JUMPER-SMT_3_1-NC JP2
+U 1 1 5F8B9EA1
+P 5350 3700
+F 0 "JP2" H 5454 3605 45  0000 L CNN
+F 1 "JUMPER-SMT_3_1-NC" H 5454 3689 45  0000 L CNN
+F 2 "SMT-JUMPER_3_1-NC" H 5350 3950 20  0001 C CNN
+F 3 "" V 5350 3645 60  0001 C CNN
+F 4 "XXX-00000" H 5454 3784 60  0000 L CNN "PROD_ID"
+	1    5350 3700
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	950  3700 1150 3700
+Wire Wire Line
+	1300 3500 1300 3400
+Wire Wire Line
+	1300 2300 2900 2300
+Wire Wire Line
+	5500 3700 5850 3700
+Wire Wire Line
+	5350 3500 5350 3350
+Wire Wire Line
+	5350 2400 3400 2400
+Wire Wire Line
+	5350 3900 2350 3900
+Wire Wire Line
+	2350 3900 2350 3400
+Wire Wire Line
+	2350 3400 1300 3400
+Connection ~ 1300 3400
+Wire Wire Line
+	1300 3400 1300 2300
+Wire Wire Line
+	1300 3900 1300 4050
+Wire Wire Line
+	1300 4050 4350 4050
+Wire Wire Line
+	4350 4050 4350 3350
+Wire Wire Line
+	4350 3350 5350 3350
+Connection ~ 5350 3350
+Wire Wire Line
+	5350 3350 5350 2400
 $EndSCHEMATC

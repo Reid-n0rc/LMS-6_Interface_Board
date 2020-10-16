@@ -24,10 +24,10 @@ Text HLabel 5850 3600 2    50   Input ~ 0
 Wire Wire Line
 	5850 3600 5500 3600
 $Comp
-L Converter_DCDC:TEC2-1219WI U?
+L Converter_DCDC:TEC2-1219WI U2
 U 1 1 5F8D2C7F
 P 5000 3800
-F 0 "U?" H 5000 4267 50  0000 C CNN
+F 0 "U2" H 5000 4267 50  0000 C CNN
 F 1 "TEC2-1219WI" H 5000 4176 50  0000 C CNN
 F 2 "Converter_DCDC:Converter_DCDC_TRACO_TMR-xxxx_THT" H 5000 3450 50  0001 C CNN
 F 3 "https://www.tracopower.com/products/tec2wi.pdf" H 5000 3300 50  0001 C CNN
@@ -35,10 +35,10 @@ F 3 "https://www.tracopower.com/products/tec2wi.pdf" H 5000 3300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C?
+L Device:C C8
 U 1 1 5F8D9973
 P 2750 3750
-F 0 "C?" H 2865 3796 50  0000 L CNN
+F 0 "C8" H 2865 3796 50  0000 L CNN
 F 1 "10uF" H 2865 3705 50  0000 L CNN
 F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder" H 2788 3600 50  0001 C CNN
 F 3 "https://media.digikey.com/pdf/Data%20Sheets/Samsung%20PDFs/CL_Series_MLCC_ds.pdf" H 2750 3750 50  0001 C CNN
@@ -48,10 +48,10 @@ F 5 "CL31A106KAHNNNE" H 2750 3750 50  0001 C CNN "MPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C?
+L Device:C C9
 U 1 1 5F8DA48B
 P 3700 3750
-F 0 "C?" H 3815 3796 50  0000 L CNN
+F 0 "C9" H 3815 3796 50  0000 L CNN
 F 1 "4.7uF" H 3815 3705 50  0000 L CNN
 F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder" H 3738 3600 50  0001 C CNN
 F 3 "https://product.tdk.com/info/en/catalog/datasheets/mlcc_commercial_general_en.pdf?ref_disty=digikey" H 3700 3750 50  0001 C CNN
@@ -61,10 +61,10 @@ F 5 "C3216X7R1E475K160AC" H 3700 3750 50  0001 C CNN "MPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR011
 U 1 1 5F8DA63B
 P 4350 4250
-F 0 "#PWR?" H 4350 4000 50  0001 C CNN
+F 0 "#PWR011" H 4350 4000 50  0001 C CNN
 F 1 "GND" H 4355 4077 50  0000 C CNN
 F 2 "" H 4350 4250 50  0001 C CNN
 F 3 "" H 4350 4250 50  0001 C CNN
@@ -72,10 +72,10 @@ F 3 "" H 4350 4250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR012
 U 1 1 5F8DAAC8
 P 5550 4250
-F 0 "#PWR?" H 5550 4000 50  0001 C CNN
+F 0 "#PWR012" H 5550 4000 50  0001 C CNN
 F 1 "GND" H 5555 4077 50  0000 C CNN
 F 2 "" H 5550 4250 50  0001 C CNN
 F 3 "" H 5550 4250 50  0001 C CNN
@@ -101,10 +101,10 @@ Connection ~ 3700 4000
 Wire Wire Line
 	2550 3600 2750 3600
 $Comp
-L SamacSys_Parts:TCK-154 L?
+L SamacSys_Parts:TCK-154 L1
 U 1 1 5F89924C
 P 2850 3600
-F 0 "L?" H 3250 3825 50  0000 C CNN
+F 0 "L1" H 3250 3825 50  0000 C CNN
 F 1 "TCK-154" H 3250 3734 50  0000 C CNN
 F 2 "TCK154" H 3500 3650 50  0001 L CNN
 F 3 "https://componentsearchengine.com/Datasheets/1/TCK-154.pdf" H 3500 3550 50  0001 L CNN
