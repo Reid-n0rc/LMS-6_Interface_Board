@@ -84,21 +84,19 @@ Wire Wire Line
 Wire Wire Line
 	2250 2300 2900 2300
 Wire Wire Line
-	1700 2700 2900 2700
-Wire Wire Line
-	1700 2600 1700 2700
+	1500 2600 1500 2700
 $Comp
 L power:+BATT #PWR?
 U 1 1 5F7D097E
-P 1700 2600
+P 1500 2600
 AR Path="/5F7D097E" Ref="#PWR?"  Part="1" 
 AR Path="/5F7BE189/5F7D097E" Ref="#PWR?"  Part="1" 
 AR Path="/5F7C6408/5F7D097E" Ref="#PWR0103"  Part="1" 
-F 0 "#PWR0103" H 1700 2450 50  0001 C CNN
-F 1 "+BATT" H 1715 2773 50  0000 C CNN
-F 2 "" H 1700 2600 50  0001 C CNN
-F 3 "" H 1700 2600 50  0001 C CNN
-	1    1700 2600
+F 0 "#PWR0103" H 1500 2450 50  0001 C CNN
+F 1 "+BATT" H 1515 2773 50  0000 C CNN
+F 2 "" H 1500 2600 50  0001 C CNN
+F 3 "" H 1500 2600 50  0001 C CNN
+	1    1500 2600
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -240,7 +238,7 @@ U21.20-DCLK
 Text HLabel 4350 2000 2    50   Input ~ 0
 SW1.1
 Text HLabel 4350 2400 2    50   Input ~ 0
-GPS.?D
+GPS.RXD
 Text HLabel 4350 2600 2    50   Input ~ 0
 U22.3
 Text HLabel 4350 2700 2    50   Input ~ 0
@@ -250,7 +248,7 @@ SW1.3
 Text HLabel 4350 3000 2    50   Input ~ 0
 U3.18
 Text HLabel 2250 2300 0    50   Input ~ 0
-GPS.??D
+GPS.TXD
 Text HLabel 2250 2200 0    50   Input ~ 0
 U3.19
 Text HLabel 2250 2000 0    50   Input ~ 0
@@ -437,4 +435,6 @@ Wire Wire Line
 	4500 4800 3550 4800
 Text Notes 2900 5150 0    50   ~ 0
 Jumper Sullins Connector Solutions NPC02SXON-RC\nJumper 1-2 to power from LMS6 Battery\nJumper 2-3 to power from exteral power
+Wire Wire Line
+	1500 2700 2900 2700
 $EndSCHEMATC
