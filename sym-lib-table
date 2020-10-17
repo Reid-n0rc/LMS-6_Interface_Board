@@ -153,4 +153,5 @@
   (lib (name power_LMS6)(type Legacy)(uri ${KIPRJMOD}/power_LMS6.lib)(options "")(descr ""))
   (lib (name SamacSys_Parts)(type Legacy)(uri "C:/Users/Reid/Documents/KiCad Projects/Symbols/SamacSys_Parts.lib")(options "")(descr ""))
   (lib (name SparkFun-Jumpers)(type Legacy)(uri "C:/Users/Reid/Documents/KiCad Projects/Symbols/SparkFun-KiCad-Libraries/Libraries/SparkFun-Jumpers.lib")(options "")(descr ""))
+  (lib (name SparkFun-Fuses)(type Legacy)(uri "C:/Users/Reid/Documents/KiCad Projects/Symbols/SparkFun-KiCad-Libraries/Libraries/SparkFun-Fuses.lib")(options "")(descr ""))
 )

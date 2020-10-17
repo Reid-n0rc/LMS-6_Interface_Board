@@ -428,6 +428,12 @@ $CMP TEC-3WI
 F https://www.tracopower.com/products/tec3wi.pdf
 $ENDCMP
 #
+$CMP TPS25921x
+D Electronic Fuse Regulator - 1.7A 8-SOIC
+K efuse, fuse
+F https://www.ti.com/lit/ds/symlink/tps25921l.pdf
+$ENDCMP
+#
 $CMP VAA
 D Power symbol creates a global label with name "VAA"
 K power-flag

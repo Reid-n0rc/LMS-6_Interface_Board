@@ -3,10 +3,10 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 4
-Title ""
-Date ""
-Rev ""
+Sheet 4 5
+Title "Card Connector"
+Date "2020-10-17"
+Rev "2"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -16,19 +16,19 @@ $EndDescr
 $Comp
 L power:+9V #PWR?
 U 1 1 5F7D0952
-P 4850 2850
+P 6500 2850
 AR Path="/5F7D0952" Ref="#PWR?"  Part="1" 
 AR Path="/5F7BE189/5F7D0952" Ref="#PWR?"  Part="1" 
 AR Path="/5F7C6408/5F7D0952" Ref="#PWR0101"  Part="1" 
-F 0 "#PWR0101" H 4850 2700 50  0001 C CNN
-F 1 "+9V" H 4865 3023 50  0000 C CNN
-F 2 "" H 4850 2850 50  0001 C CNN
-F 3 "" H 4850 2850 50  0001 C CNN
-	1    4850 2850
+F 0 "#PWR0101" H 6500 2700 50  0001 C CNN
+F 1 "+9V" H 6515 3023 50  0000 C CNN
+F 2 "" H 6500 2850 50  0001 C CNN
+F 3 "" H 6500 2850 50  0001 C CNN
+	1    6500 2850
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4850 3100 4850 2850
+	6500 3100 6500 2850
 Wire Wire Line
 	4350 2600 3400 2600
 Wire Wire Line
@@ -47,8 +47,6 @@ Wire Wire Line
 	3400 3000 4350 3000
 Text Label 4150 3100 2    50   ~ 0
 RED_WIRE
-Wire Wire Line
-	3400 3100 4850 3100
 Wire Wire Line
 	4350 1300 3400 1300
 Text Label 2000 3100 0    50   ~ 0
@@ -489,4 +487,86 @@ Wire Wire Line
 Connection ~ 5350 3350
 Wire Wire Line
 	5350 3350 5350 2400
+Wire Wire Line
+	3400 3100 6500 3100
+$Comp
+L dk_LED-Indication-Discrete:LH_R974-LP-1 D?
+U 1 1 5F959F13
+P 6500 3900
+AR Path="/5F917C06/5F959F13" Ref="D?"  Part="1" 
+AR Path="/5F8460BD/5F959F13" Ref="D?"  Part="1" 
+AR Path="/5F7C6408/5F959F13" Ref="D3"  Part="1" 
+F 0 "D3" H 6450 4237 60  0000 C CNN
+F 1 "LG R971-KN-1" H 6450 4131 60  0000 C CNN
+F 2 "digikey-footprints:0805" H 6700 4100 60  0001 L CNN
+F 3 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493888/LH%20R974.pdf" H 6700 4200 60  0001 L CNN
+F 4 "475-1410-1-ND" H 6700 4300 60  0001 L CNN "Digi-Key_PN"
+F 5 "LG R971-KN-1" H 6700 4400 60  0001 L CNN "MPN"
+F 6 "Optoelectronics" H 6700 4500 60  0001 L CNN "Category"
+F 7 "LED Indication - Discrete" H 6700 4600 60  0001 L CNN "Family"
+F 8 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493888/LH%20R974.pdf" H 6700 4700 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/osram-opto-semiconductors-inc/LH-R974-LP-1/475-1415-1-ND/1802604" H 6700 4800 60  0001 L CNN "DK_Detail_Page"
+F 10 "LED GREEN DIFFUSED 0805 SMD" H 6700 4900 60  0001 L CNN "Description"
+F 11 "OSRAM Opto Semiconductors Inc." H 6700 5000 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 6700 5100 60  0001 L CNN "Status"
+	1    6500 3900
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 5F959F1B
+P 6500 4300
+AR Path="/5F8460BD/5F959F1B" Ref="R?"  Part="1" 
+AR Path="/5F917C06/5F959F1B" Ref="R?"  Part="1" 
+AR Path="/5F7C6408/5F959F1B" Ref="R12"  Part="1" 
+F 0 "R12" V 6295 4300 50  0000 C CNN
+F 1 "909" V 6386 4300 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 6540 4290 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 6500 4300 50  0001 C CNN
+F 4 "Yageo" V 6500 4300 50  0001 C CNN "Manufacturer"
+F 5 "RC0805FR-07909RL" V 6500 4300 50  0001 C CNN "MPN"
+	1    6500 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 4150 6500 4000
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 5F963A79
+P 6800 3250
+AR Path="/5F963A79" Ref="J?"  Part="1" 
+AR Path="/5F7C6408/5F963A79" Ref="J13"  Part="1" 
+F 0 "J13" V 6672 3330 50  0000 L CNN
+F 1 "Conn_01x02" V 6763 3330 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 6800 3250 50  0001 C CNN
+F 3 "~" H 6800 3250 50  0001 C CNN
+F 4 "Würth Elektronik" V 6800 3250 50  0001 C CNN "Manufacturer"
+F 5 "61300211121" V 6800 3250 50  0001 C CNN "MPN"
+	1    6800 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 3100 6500 3250
+Wire Wire Line
+	6500 3250 6600 3250
+Connection ~ 6500 3100
+Wire Wire Line
+	6600 3350 6500 3350
+Wire Wire Line
+	6500 3350 6500 3700
+Text Notes 6950 3400 0    50   ~ 0
+Remove jumper to \nallow for more accurate\npower measurements
+$Comp
+L power:GND #PWR023
+U 1 1 5F98BEEC
+P 6500 4500
+F 0 "#PWR023" H 6500 4250 50  0001 C CNN
+F 1 "GND" H 6505 4327 50  0000 C CNN
+F 2 "" H 6500 4500 50  0001 C CNN
+F 3 "" H 6500 4500 50  0001 C CNN
+	1    6500 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 4450 6500 4500
 $EndSCHEMATC

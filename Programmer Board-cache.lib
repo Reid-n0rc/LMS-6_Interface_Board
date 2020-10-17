@@ -556,6 +556,34 @@ X GND 9 -200 -2900 100 U 50 50 1 1 W
 ENDDRAW
 ENDDEF
 #
+# dk_LED-Indication-Discrete_LH_R974-LP-1
+#
+DEF dk_LED-Indication-Discrete_LH_R974-LP-1 D 0 0 Y Y 1 F N
+F0 "D" -150 150 60 H V C CNN
+F1 "dk_LED-Indication-Discrete_LH_R974-LP-1" -50 -150 60 H V C CNN
+F2 "digikey-footprints:0805" 200 200 60 H I L CNN
+F3 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493888/LH%20R974.pdf" 200 300 60 H I L CNN
+F4 "475-1415-1-ND" 200 400 60 H I L CNN "Digi-Key_PN"
+F5 "LH R974-LP-1" 200 500 60 H I L CNN "MPN"
+F6 "Optoelectronics" 200 600 60 H I L CNN "Category"
+F7 "LED Indication - Discrete" 200 700 60 H I L CNN "Family"
+F8 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493888/LH%20R974.pdf" 200 800 60 H I L CNN "DK_Datasheet_Link"
+F9 "/product-detail/en/osram-opto-semiconductors-inc/LH-R974-LP-1/475-1415-1-ND/1802604" 200 900 60 H I L CNN "DK_Detail_Page"
+F10 "LED RED DIFFUSED 0805 SMD" 200 1000 60 H I L CNN "Description"
+F11 "OSRAM Opto Semiconductors Inc." 200 1100 60 H I L CNN "Manufacturer"
+F12 "Active" 200 1200 60 H I L CNN "Status"
+DRAW
+P 2 0 1 0 -25 150 -75 100 N
+P 2 0 1 0 0 50 0 -50 N
+P 2 0 1 0 25 125 -25 75 N
+P 3 0 1 0 -50 150 -25 150 -25 125 N
+P 3 0 1 0 0 125 25 125 25 100 N
+P 4 0 1 0 -100 50 -100 -50 0 0 -100 50 F
+X ~ 1 -200 0 100 R 50 50 1 1 P
+X ~ 2 100 0 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
 # dk_USB-DVI-HDMI-Connectors_UJ2-MIBH-4-SMT-TR
 #
 DEF dk_USB-DVI-HDMI-Connectors_UJ2-MIBH-4-SMT-TR J 0 40 Y Y 1 F N
@@ -637,6 +665,26 @@ F3 "" 0 0 50 H I C CNN
 DRAW
 P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
 X GND 1 0 0 0 D 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# power_LMS6_TPS25921x
+#
+DEF power_LMS6_TPS25921x U 0 40 Y Y 1 F N
+F0 "U" -290 920 50 H V C CNN
+F1 "power_LMS6_TPS25921x" -110 840 50 H V C CNN
+F2 "LMS-6_Interface_Board:SOIC-8_W5.4mm" -70 840 50 H I C CNN
+F3 "" -70 840 50 H I C CNN
+DRAW
+S -300 800 200 200 0 1 0 f
+X GND 1 -100 100 100 U 50 50 1 1 I
+X SS 2 -400 400 100 R 50 50 1 1 I
+X ENUV 3 -400 600 100 R 50 50 1 1 I
+X IN 4 -400 700 100 R 50 50 1 1 I
+X OUT 5 300 700 100 L 50 50 1 1 I
+X ~FLT~ 6 300 600 100 L 50 50 1 1 C
+X OVP 8 -400 500 100 R 50 50 1 1 I
+X ILIM ~ 300 500 100 L 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #

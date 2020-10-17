@@ -1,12 +1,12 @@
 EESchema Schematic File Version 4
 EELAYER 30 0
 EELAYER END
-$Descr A4 11693 8268
+$Descr USLetter 11000 8500
 encoding utf-8
-Sheet 2 4
-Title ""
-Date ""
-Rev ""
+Sheet 2 5
+Title "USB to UART"
+Date "2020-10-17"
+Rev "2"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -436,8 +436,6 @@ $EndComp
 Text HLabel 8500 2150 1    50   Input ~ 0
 +5_USB
 Wire Wire Line
-	8500 2150 8500 2450
-Wire Wire Line
 	8500 2450 9300 2450
 Connection ~ 8500 2450
 Wire Wire Line
@@ -546,7 +544,9 @@ $Comp
 L SparkFun-Jumpers:JUMPER-SMT_3_1-NC JP?
 U 1 1 5F8D37AA
 P 2000 5000
-F 0 "JP?" H 2104 4905 45  0000 L CNN
+AR Path="/5F7C6408/5F8D37AA" Ref="JP?"  Part="1" 
+AR Path="/5F8460BD/5F8D37AA" Ref="JP5"  Part="1" 
+F 0 "JP5" H 2104 4905 45  0000 L CNN
 F 1 "JUMPER-SMT_3_1-NC" H 2104 4989 45  0000 L CNN
 F 2 "SMT-JUMPER_3_1-NC" H 2000 5250 20  0001 C CNN
 F 3 "" V 2000 4945 60  0001 C CNN
@@ -558,7 +558,9 @@ $Comp
 L SparkFun-Jumpers:JUMPER-SMT_3_1-NC JP?
 U 1 1 5F8DF40E
 P 1750 5700
-F 0 "JP?" H 1854 5605 45  0000 L CNN
+AR Path="/5F7C6408/5F8DF40E" Ref="JP?"  Part="1" 
+AR Path="/5F8460BD/5F8DF40E" Ref="JP4"  Part="1" 
+F 0 "JP4" H 1854 5605 45  0000 L CNN
 F 1 "JUMPER-SMT_3_1-NC" H 1854 5689 45  0000 L CNN
 F 2 "SMT-JUMPER_3_1-NC" H 1750 5950 20  0001 C CNN
 F 3 "" V 1750 5645 60  0001 C CNN
@@ -592,4 +594,58 @@ Wire Wire Line
 Connection ~ 1750 4800
 Wire Wire Line
 	1750 4800 1400 4800
+$Comp
+L dk_LED-Indication-Discrete:LH_R974-LP-1 D?
+U 1 1 5F9390C2
+P 7800 2700
+AR Path="/5F917C06/5F9390C2" Ref="D?"  Part="1" 
+AR Path="/5F8460BD/5F9390C2" Ref="D2"  Part="1" 
+F 0 "D2" H 7750 3037 60  0000 C CNN
+F 1 "LG R971-KN-1" H 7750 2931 60  0000 C CNN
+F 2 "digikey-footprints:0805" H 8000 2900 60  0001 L CNN
+F 3 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493888/LH%20R974.pdf" H 8000 3000 60  0001 L CNN
+F 4 "475-1410-1-ND" H 8000 3100 60  0001 L CNN "Digi-Key_PN"
+F 5 "LG R971-KN-1" H 8000 3200 60  0001 L CNN "MPN"
+F 6 "Optoelectronics" H 8000 3300 60  0001 L CNN "Category"
+F 7 "LED Indication - Discrete" H 8000 3400 60  0001 L CNN "Family"
+F 8 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493888/LH%20R974.pdf" H 8000 3500 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/osram-opto-semiconductors-inc/LH-R974-LP-1/475-1415-1-ND/1802604" H 8000 3600 60  0001 L CNN "DK_Detail_Page"
+F 10 "LED GREEN DIFFUSED 0805 SMD" H 8000 3700 60  0001 L CNN "Description"
+F 11 "OSRAM Opto Semiconductors Inc." H 8000 3800 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 8000 3900 60  0001 L CNN "Status"
+	1    7800 2700
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R11
+U 1 1 5F9390CA
+P 7800 3100
+AR Path="/5F8460BD/5F9390CA" Ref="R11"  Part="1" 
+AR Path="/5F917C06/5F9390CA" Ref="R?"  Part="1" 
+F 0 "R11" V 7595 3100 50  0000 C CNN
+F 1 "280" V 7686 3100 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 7840 3090 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 7800 3100 50  0001 C CNN
+F 4 "Yageo" V 7800 3100 50  0001 C CNN "Manufacturer"
+F 5 "RC0805FR-07280RL" V 7800 3100 50  0001 C CNN "MPN"
+	1    7800 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7800 2950 7800 2800
+Wire Wire Line
+	7800 2500 7800 2450
+Wire Wire Line
+	7800 2450 8500 2450
+Wire Wire Line
+	8500 2400 8500 2450
+Wire Wire Line
+	8500 2150 8500 2450
+Wire Wire Line
+	7800 3250 7800 3300
+Wire Wire Line
+	7800 3300 8500 3300
+Wire Wire Line
+	8500 3300 8500 3000
+Connection ~ 8500 3000
 $EndSCHEMATC
