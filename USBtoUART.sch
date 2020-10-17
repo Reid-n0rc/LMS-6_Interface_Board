@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 4
+Sheet 2 4
 Title ""
 Date ""
 Rev ""
@@ -241,14 +241,10 @@ Wire Wire Line
 	4450 3900 4650 3900
 Wire Wire Line
 	4450 3800 4650 3800
-Text HLabel 4500 5100 0    50   Input ~ 0
+Text HLabel 1400 4800 0    50   Input ~ 0
 UART2.RXD
-Text HLabel 4500 5200 0    50   Input ~ 0
+Text HLabel 1400 5900 0    50   Input ~ 0
 UART2.TXD
-Wire Wire Line
-	4500 5200 4650 5200
-Wire Wire Line
-	4500 5100 4650 5100
 $Comp
 L Device:Crystal Y1
 U 1 1 5F86847C
@@ -546,4 +542,54 @@ Wire Wire Line
 	4000 2300 4000 1550
 Wire Wire Line
 	4400 2300 4650 2300
+$Comp
+L SparkFun-Jumpers:JUMPER-SMT_3_1-NC JP?
+U 1 1 5F8D37AA
+P 2000 5000
+F 0 "JP?" H 2104 4905 45  0000 L CNN
+F 1 "JUMPER-SMT_3_1-NC" H 2104 4989 45  0000 L CNN
+F 2 "SMT-JUMPER_3_1-NC" H 2000 5250 20  0001 C CNN
+F 3 "" V 2000 4945 60  0001 C CNN
+F 4 "XXX-00000" H 2104 5084 60  0000 L CNN "PROD_ID"
+	1    2000 5000
+	-1   0    0    1   
+$EndComp
+$Comp
+L SparkFun-Jumpers:JUMPER-SMT_3_1-NC JP?
+U 1 1 5F8DF40E
+P 1750 5700
+F 0 "JP?" H 1854 5605 45  0000 L CNN
+F 1 "JUMPER-SMT_3_1-NC" H 1854 5689 45  0000 L CNN
+F 2 "SMT-JUMPER_3_1-NC" H 1750 5950 20  0001 C CNN
+F 3 "" V 1750 5645 60  0001 C CNN
+F 4 "XXX-00000" H 1854 5784 60  0000 L CNN "PROD_ID"
+	1    1750 5700
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1900 5700 4150 5700
+Wire Wire Line
+	4150 5700 4150 5200
+Wire Wire Line
+	4150 5200 4650 5200
+Wire Wire Line
+	2150 5000 4350 5000
+Wire Wire Line
+	4350 5000 4350 5100
+Wire Wire Line
+	4350 5100 4650 5100
+Wire Wire Line
+	1400 5900 1750 5900
+Wire Wire Line
+	1750 5900 2000 5900
+Wire Wire Line
+	2000 5900 2000 5200
+Connection ~ 1750 5900
+Wire Wire Line
+	2000 4800 1750 4800
+Wire Wire Line
+	1750 5500 1750 4800
+Connection ~ 1750 4800
+Wire Wire Line
+	1750 4800 1400 4800
 $EndSCHEMATC
