@@ -1,12 +1,12 @@
 EESchema Schematic File Version 4
 EELAYER 30 0
 EELAYER END
-$Descr A4 11693 8268
+$Descr USLetter 11000 8500
 encoding utf-8
 Sheet 5 5
-Title ""
+Title "eFuse"
 Date "2020-10-17"
-Rev "2"
+Rev "3"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -233,4 +233,6 @@ Wire Wire Line
 	5500 3100 5500 2950
 Wire Wire Line
 	6200 3150 6200 3050
+Text Notes 7450 2300 0    50   ~ 0
+Power Failure Detection Threshold: ... 4.62V\nRelease UVLO, Enable Chip: ............... 4.79V\nOver Voltage Cut-off: ....................... 16.76V\nRelease OV: ..................................... 16.16 V\n\nCurrent LImit: ..................................  1.51 A\nCurrent LImit Fast Trip: .................... 2.39 A
 $EndSCHEMATC
