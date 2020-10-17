@@ -6,7 +6,7 @@ encoding utf-8
 Sheet 4 5
 Title "Card Connector"
 Date "2020-10-17"
-Rev "3"
+Rev "5"
 Comp ""
 Comment1 ""
 Comment2 ""

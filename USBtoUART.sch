@@ -6,7 +6,7 @@ encoding utf-8
 Sheet 2 5
 Title "USB to UART"
 Date "2020-10-17"
-Rev "3"
+Rev "5"
 Comp ""
 Comment1 ""
 Comment2 ""
