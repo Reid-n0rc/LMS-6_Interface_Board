@@ -412,17 +412,6 @@ Wire Wire Line
 	3750 4500 3750 4600
 Wire Wire Line
 	3750 4600 3550 4600
-$Comp
-L Connector_Generic:Conn_01x03 J6
-U 1 1 5F8CD356
-P 3350 4700
-F 0 "J6" H 3268 5017 50  0000 C CNN
-F 1 "Conn_01x03" H 3268 4926 50  0000 C CNN
-F 2 "" H 3350 4700 50  0001 C CNN
-F 3 "~" H 3350 4700 50  0001 C CNN
-	1    3350 4700
-	-1   0    0    -1  
-$EndComp
 Text HLabel 4500 4800 2    50   Input ~ 0
 9V_PS
 Wire Wire Line
@@ -569,4 +558,19 @@ F 3 "" H 6500 4500 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6500 4450 6500 4500
+$Comp
+L Connector_Generic:Conn_01x03 J6
+U 1 1 5F9ABDCE
+P 3350 4700
+AR Path="/5F7C6408/5F9ABDCE" Ref="J6"  Part="1" 
+AR Path="/5F9ABDCE" Ref="J?"  Part="1" 
+F 0 "J6" H 3268 5017 50  0000 C CNN
+F 1 "Conn_01x03" H 3268 4926 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 3350 4700 50  0001 C CNN
+F 3 "https://katalog.we-online.de/em/datasheet/6130xx11121.pdf" H 3350 4700 50  0001 C CNN
+F 4 "Würth Elektronik" H 3350 4700 50  0001 C CNN "Manufacturer"
+F 5 "61300311121" H 3350 4700 50  0001 C CNN "MPN"
+	1    3350 4700
+	-1   0    0    -1  
+$EndComp
 $EndSCHEMATC

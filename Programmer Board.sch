@@ -6,12 +6,12 @@ encoding utf-8
 Sheet 1 5
 Title "LMS6 Interface Board"
 Date "2020-10-17"
-Rev "3"
+Rev "5"
 Comp ""
-Comment1 "Rev 1: Initial Release"
-Comment2 "Rev 2: Added eFuse. Power Configurations."
-Comment3 "Rev 3: Changed sheet to US Letter"
-Comment4 "Rev 4: Fixed J9 hanging over border of sheet."
+Comment1 "Rev 2: Added eFuse. Power Configurations."
+Comment2 "Rev 3: Changed sheet to US Letter"
+Comment3 "Rev 4: Fixed J9 hanging over border of sheet."
+Comment4 "Rev 5: Fixed J6 footprint and MPN info."
 $EndDescr
 $Sheet
 S 2650 4250 1050 650 
