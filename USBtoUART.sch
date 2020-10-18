@@ -6,7 +6,7 @@ encoding utf-8
 Sheet 2 5
 Title "USB to UART"
 Date "2020-10-17"
-Rev "5"
+Rev "6"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -209,7 +209,7 @@ $EndComp
 Wire Wire Line
 	1650 2000 2700 2000
 Wire Wire Line
-	3000 2000 4650 2000
+	3000 2000 3900 2000
 Wire Wire Line
 	1650 2100 3200 2100
 $Comp
@@ -241,95 +241,14 @@ Text HLabel 1400 4800 0    50   Input ~ 0
 UART2.RXD
 Text HLabel 1400 5900 0    50   Input ~ 0
 UART2.TXD
-$Comp
-L Device:Crystal Y1
-U 1 1 5F86847C
-P 3350 3000
-F 0 "Y1" V 3304 3131 50  0000 L CNN
-F 1 "AS-6.000-12-2020-EXT-SMD-TR" V 3395 3131 50  0000 L CNN
-F 2 "Crystal:Crystal_SMD_HC49-SD_HandSoldering" H 3350 3000 50  0001 C CNN
-F 3 "http://www.raltron.com/wp-content/uploads/2016/10/crystal_as-smd.pdf" H 3350 3000 50  0001 C CNN
-F 4 "Raltron Electronics" V 3350 3000 50  0001 C CNN "Manufactuer"
-F 5 "AS-6.000-12-2020-EXT-SMD-TR" V 3350 3000 50  0001 C CNN "MPN"
-	1    3350 3000
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	4650 2600 3350 2600
-Wire Wire Line
-	3350 2600 3350 2850
-Wire Wire Line
-	3350 3150 3350 3350
 Wire Wire Line
 	3350 6350 6600 6350
 Wire Wire Line
 	6600 6350 6600 3000
 Wire Wire Line
 	6600 3000 5850 3000
-$Comp
-L Device:C C1
-U 1 1 5F869A1D
-P 2750 2800
-F 0 "C1" H 2865 2846 50  0000 L CNN
-F 1 "12pF" H 2865 2755 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 2750 2800 50  0001 C CNN
-F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GP_NP0_16V-to-50V_18.pdf" H 2750 2800 50  0001 C CNN
-F 4 "Yageo" H 2750 2800 50  0001 C CNN "Manufacturer"
-F 5 "CC0805JRNPO9BN120" H 2750 2800 50  0001 C CNN "MPN"
-	1    2750 2800
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C2
-U 1 1 5F86A608
-P 2750 3600
-F 0 "C2" H 2865 3646 50  0000 L CNN
-F 1 "12pF" H 2865 3555 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 2750 3600 50  0001 C CNN
-F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GP_NP0_16V-to-50V_18.pdf" H 2750 3600 50  0001 C CNN
-F 4 "Yageo" H 2750 3600 50  0001 C CNN "Manufacturer"
-F 5 "CC0805JRNPO9BN120" H 2750 3600 50  0001 C CNN "MPN"
-	1    2750 3600
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR04
-U 1 1 5F86A976
-P 2750 3000
-F 0 "#PWR04" H 2750 2750 50  0001 C CNN
-F 1 "GND" H 2755 2827 50  0000 C CNN
-F 2 "" H 2750 3000 50  0001 C CNN
-F 3 "" H 2750 3000 50  0001 C CNN
-	1    2750 3000
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR05
-U 1 1 5F86AC39
-P 2750 3850
-F 0 "#PWR05" H 2750 3600 50  0001 C CNN
-F 1 "GND" H 2755 3677 50  0000 C CNN
-F 2 "" H 2750 3850 50  0001 C CNN
-F 3 "" H 2750 3850 50  0001 C CNN
-	1    2750 3850
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2750 3850 2750 3750
-Wire Wire Line
-	2750 3450 2750 3350
-Wire Wire Line
-	2750 3350 3350 3350
-Connection ~ 3350 3350
-Wire Wire Line
-	3350 3350 3350 6350
-Wire Wire Line
-	2750 2650 2750 2600
-Wire Wire Line
-	2750 2600 3350 2600
-Connection ~ 3350 2600
-Wire Wire Line
-	2750 2950 2750 3000
 $Comp
 L power:GND #PWR010
 U 1 1 5F88F94A
@@ -487,13 +406,6 @@ Wire Wire Line
 	4350 2750 4350 2500
 Wire Wire Line
 	4350 2500 4650 2500
-Wire Wire Line
-	3500 2100 3900 2100
-Wire Wire Line
-	3900 1400 3900 2100
-Connection ~ 3900 2100
-Wire Wire Line
-	3900 2100 4650 2100
 Wire Wire Line
 	5650 1700 5650 1750
 Wire Wire Line
@@ -676,4 +588,70 @@ Text Label 2350 2100 0    50   ~ 0
 USBDM_IN
 Text Label 2350 2000 0    50   ~ 0
 USBDP_IN
+Wire Wire Line
+	3500 2100 4650 2100
+Wire Wire Line
+	3900 1400 3900 2000
+Connection ~ 3900 2000
+Wire Wire Line
+	3900 2000 4650 2000
+$Comp
+L Device:Resonator Y1
+U 1 1 5F90F2B8
+P 3350 3100
+F 0 "Y1" V 3100 2950 50  0000 L CNN
+F 1 "CSTNR6M00GH5C000R0" H 3550 3050 50  0000 L CNN
+F 2 "LMS-6_Interface_Board:CSTNR_Resonator" H 3325 3100 50  0001 C CNN
+F 3 "http://www.murata.com/products/productdata/8801159675934/SPEC-CSTNR4M00GH5L000R0.pdf" H 3325 3100 50  0001 C CNN
+F 4 "Murata Electronics" H 3350 3100 50  0001 C CNN "Manufacaturer"
+F 5 "CSTNR6M00GH5C000R0" H 3350 3100 50  0001 C CNN "MPN"
+	1    3350 3100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3350 3250 3350 3450
+$Comp
+L power:GND #PWR04
+U 1 1 5F9206BB
+P 2950 3200
+F 0 "#PWR04" H 2950 2950 50  0001 C CNN
+F 1 "GND" H 2955 3027 50  0000 C CNN
+F 2 "" H 2950 3200 50  0001 C CNN
+F 3 "" H 2950 3200 50  0001 C CNN
+	1    2950 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2950 3200 2950 3100
+Wire Wire Line
+	2950 3100 3150 3100
+$Comp
+L Device:R_US R13
+U 1 1 5F92454E
+P 3700 3050
+F 0 "R13" V 3495 3050 50  0000 C CNN
+F 1 "1M" V 3586 3050 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 3740 3040 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 3700 3050 50  0001 C CNN
+F 4 "Yageo" V 3700 3050 50  0001 C CNN "Manufacturer"
+F 5 "RC0805FR-071ML" V 3700 3050 50  0001 C CNN "MPN"
+	1    3700 3050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3700 3200 3700 3450
+Wire Wire Line
+	3700 3450 3350 3450
+Connection ~ 3350 3450
+Wire Wire Line
+	3350 3450 3350 6350
+Wire Wire Line
+	3700 2900 3700 2800
+Wire Wire Line
+	3700 2800 3350 2800
+Wire Wire Line
+	3350 2600 3350 2800
+Connection ~ 3350 2800
+Wire Wire Line
+	3350 2800 3350 2950
 $EndSCHEMATC

@@ -11,7 +11,7 @@ Comp ""
 Comment1 "Rev 3: Changed sheet to US Letter"
 Comment2 "Rev 4: Fixed J9 hanging over border of sheet."
 Comment3 "Rev 5: Fixed J6 footprint and MPN info."
-Comment4 "Rev 6: Fixed footprint issues. Changed J9 connections for layout."
+Comment4 "Rev 6: Fixed footprint issues. Changed J9 connections for layout. Changed Y1."
 $EndDescr
 $Sheet
 S 2650 4250 1050 650 
@@ -87,45 +87,8 @@ Wire Wire Line
 	3700 4450 6750 4450
 Wire Wire Line
 	3700 4550 6750 4550
-$Comp
-L SparkFun-Jumpers:JUMPER-SMT_3_1-NC JP?
-U 1 1 5F8F06E0
-P 4500 4900
-AR Path="/5F7C6408/5F8F06E0" Ref="JP?"  Part="1" 
-AR Path="/5F8F06E0" Ref="JP3"  Part="1" 
-F 0 "JP3" V 4646 4900 45  0000 C CNN
-F 1 "JUMPER-SMT_3_1-NC" V 4730 4900 45  0000 C CNN
-F 2 "Jumpers:SMT-JUMPER_3_1-NC_TRACE_NO-SILK" H 4500 5150 20  0001 C CNN
-F 3 "" V 4500 4845 60  0001 C CNN
-F 4 "XXX-00000" V 4825 4900 60  0000 C CNN "PROD_ID"
-	1    4500 4900
-	0    -1   1    0   
-$EndComp
-Wire Wire Line
-	3700 4750 4500 4750
 Wire Wire Line
 	4700 4900 6750 4900
-$Comp
-L Connector_Generic:Conn_01x02 J8
-U 1 1 5F8F12C1
-P 3900 5400
-F 0 "J8" V 3772 5480 50  0000 L CNN
-F 1 "Conn_01x02" V 3863 5480 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3900 5400 50  0001 C CNN
-F 3 "~" H 3900 5400 50  0001 C CNN
-F 4 "Würth Elektronik" V 3900 5400 50  0001 C CNN "Manufacturer"
-F 5 "61300211121" V 3900 5400 50  0001 C CNN "MPN"
-	1    3900 5400
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	3900 5200 3900 4900
-Wire Wire Line
-	3900 4900 4300 4900
-Wire Wire Line
-	3800 5200 3800 4650
-Wire Wire Line
-	3800 4650 3700 4650
 $Comp
 L Connector_Generic:Conn_02x18_Odd_Even J9
 U 1 1 5F8F3B51
@@ -446,4 +409,12 @@ Wire Wire Line
 	9450 5100 9650 5100
 Wire Wire Line
 	9450 5200 9650 5200
+Wire Wire Line
+	4700 4750 4700 4900
+Wire Wire Line
+	3700 4750 4700 4750
+Text Label 2300 3200 0    50   ~ 0
++PS
+Text Label 900  3200 0    50   ~ 0
+-PS
 $EndSCHEMATC

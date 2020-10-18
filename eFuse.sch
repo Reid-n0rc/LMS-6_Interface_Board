@@ -6,7 +6,7 @@ encoding utf-8
 Sheet 5 5
 Title "eFuse"
 Date "2020-10-17"
-Rev "5"
+Rev "6"
 Comp ""
 Comment1 ""
 Comment2 ""
