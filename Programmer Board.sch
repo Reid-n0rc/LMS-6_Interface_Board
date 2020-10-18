@@ -6,12 +6,12 @@ encoding utf-8
 Sheet 1 5
 Title "LMS6 Interface Board"
 Date "2020-10-17"
-Rev "6"
+Rev "7"
 Comp ""
-Comment1 "Rev 3: Changed sheet to US Letter"
-Comment2 "Rev 4: Fixed J9 hanging over border of sheet."
-Comment3 "Rev 5: Fixed J6 footprint and MPN info."
-Comment4 "Rev 6: Fixed footprint issues. Changed J9 connections for layout. Changed Y1."
+Comment1 "Rev 4: Fixed J9 hanging over border of sheet."
+Comment2 "Rev 5: Fixed J6 footprint and MPN info."
+Comment3 "Rev 6: Fixed footprint issues. Changed J9 connections for layout. Changed Y1."
+Comment4 "Rev 7: Ran DRC and fixed errors with flags to make rixon happy."
 $EndDescr
 $Sheet
 S 2650 4250 1050 650 
@@ -31,6 +31,7 @@ F0 "DC-DC Converter" 50
 F1 "DC-DC Converter.sch" 50
 F2 "+V_in" I L 4800 3300 50 
 F3 "+V_out" I R 5750 3300 50 
+F4 "ON-~OFF" I L 4800 3450 50 
 $EndSheet
 $Comp
 L Connector_Generic:Conn_01x03 J?
@@ -82,6 +83,10 @@ F20 "HEADER1.7" I R 9450 4000 50
 F21 "HEADER1.9" I R 9450 3800 50 
 F22 "HEADER1.10" I R 9450 3600 50 
 F23 "9V_PS" I L 6750 3300 50 
+F24 "ST7-ICCSEL" I L 6750 5650 50 
+F25 "ST7-ICCDATA" I L 6750 5350 50 
+F26 "ST7-RESET" I L 6750 5550 50 
+F27 "ST7-ICCCLK" I L 6750 5450 50 
 $EndSheet
 Wire Wire Line
 	3700 4450 6750 4450
@@ -417,4 +422,93 @@ Text Label 2300 3200 0    50   ~ 0
 +PS
 Text Label 900  3200 0    50   ~ 0
 -PS
+NoConn ~ 4800 3450
+$Comp
+L Connector_Generic:Conn_02x05_Odd_Even J?
+U 1 1 5F9DEBE9
+P 5600 5550
+AR Path="/5F7C6408/5F9DEBE9" Ref="J?"  Part="1" 
+AR Path="/5F9DEBE9" Ref="J7"  Part="1" 
+F 0 "J7" H 5650 5967 50  0000 C CNN
+F 1 "302-S101" H 5650 5876 50  0000 C CNN
+F 2 "digikey-footprints:PinHeader_2x5_P2.54mm_Drill1.2mm" H 5600 5550 50  0001 C CNN
+F 3 "http://www.on-shore.com/wp-content/uploads/2018/04/302-SXX1.pdf" H 5600 5550 50  0001 C CNN
+F 4 "302-S101" H 5600 5550 50  0001 C CNN "MPN"
+F 5 "On Shore Technology Inc." H 5600 5550 50  0001 C CNN "Maufacturer"
+	1    5600 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VDD #PWR0108
+U 1 1 5F9DEBF3
+P 4850 5550
+AR Path="/5F9DEBF3" Ref="#PWR0108"  Part="1" 
+AR Path="/5F7BE189/5F9DEBF3" Ref="#PWR?"  Part="1" 
+AR Path="/5F7C6408/5F9DEBF3" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0108" H 4850 5400 50  0001 C CNN
+F 1 "VDD" H 4865 5723 50  0000 C CNN
+F 2 "" H 4850 5550 50  0001 C CNN
+F 3 "" H 4850 5550 50  0001 C CNN
+	1    4850 5550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 5650 4850 5650
+Wire Wire Line
+	4850 5650 4850 5550
+$Comp
+L power:GND #PWR0109
+U 1 1 5F9DEBFB
+P 5300 5900
+AR Path="/5F9DEBFB" Ref="#PWR0109"  Part="1" 
+AR Path="/5F7BE189/5F9DEBFB" Ref="#PWR?"  Part="1" 
+AR Path="/5F7C6408/5F9DEBFB" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0109" H 5300 5650 50  0001 C CNN
+F 1 "GND" H 5305 5727 50  0000 C CNN
+F 2 "" H 5300 5900 50  0001 C CNN
+F 3 "" H 5300 5900 50  0001 C CNN
+	1    5300 5900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5300 5350 5400 5350
+Wire Wire Line
+	5300 5350 5300 5450
+Wire Wire Line
+	5400 5550 5300 5550
+Connection ~ 5300 5550
+Wire Wire Line
+	5300 5550 5300 5900
+Wire Wire Line
+	5400 5450 5300 5450
+Connection ~ 5300 5450
+Wire Wire Line
+	5300 5450 5300 5550
+$Comp
+L power:GND #PWR0110
+U 1 1 5F9DEC09
+P 5950 5900
+AR Path="/5F9DEC09" Ref="#PWR0110"  Part="1" 
+AR Path="/5F7BE189/5F9DEC09" Ref="#PWR?"  Part="1" 
+AR Path="/5F7C6408/5F9DEC09" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0110" H 5950 5650 50  0001 C CNN
+F 1 "GND" H 5955 5727 50  0000 C CNN
+F 2 "" H 5950 5900 50  0001 C CNN
+F 3 "" H 5950 5900 50  0001 C CNN
+	1    5950 5900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 5750 5950 5750
+Wire Wire Line
+	5950 5750 5950 5900
+NoConn ~ 5400 5750
+Wire Wire Line
+	5900 5350 6750 5350
+Wire Wire Line
+	5900 5450 6750 5450
+Wire Wire Line
+	5900 5550 6750 5550
+Wire Wire Line
+	5900 5650 6750 5650
 $EndSCHEMATC

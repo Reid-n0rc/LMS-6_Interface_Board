@@ -6,7 +6,7 @@ encoding utf-8
 Sheet 2 5
 Title "USB to UART"
 Date "2020-10-17"
-Rev "6"
+Rev "7"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -19,7 +19,7 @@ U 1 1 5F8465F0
 P 5450 2500
 F 0 "U1" H 5894 1453 60  0000 L CNN
 F 1 "FT2232D-REEL" H 5894 1347 60  0000 L CNN
-F 2 "digikey-footprints:LQFP-48_7x7mm" V 5650 2700 60  0001 L CNN
+F 2 "LMS-6_Interface_Board:LQFP-48_7x7mm_Narrow_Pad" V 5650 2700 60  0001 L CNN
 F 3 "http://www.ftdichip.com/Support/Documents/DataSheets/ICs/DS_FT2232D.pdf" H 5650 2800 60  0001 L CNN
 F 4 "768-1010-1-ND" H 5650 2900 60  0001 L CNN "Digi-Key_PN"
 F 5 "FT2232D-REEL" H 5650 3000 60  0001 L CNN "MPN"
@@ -123,8 +123,6 @@ F 12 "Active" H 2400 3100 60  0001 L CNN "Status"
 	1    2200 1900
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1650 1900 2000 1900
 $Comp
 L Device:C C4
 U 1 1 5F84E28B
@@ -559,9 +557,9 @@ Connection ~ 8500 3000
 Text Label 4350 2300 0    50   ~ 0
 EEDATA
 Text Label 4350 2100 0    50   ~ 0
-USBDM
+USBD_N
 Text Label 4350 2000 0    50   ~ 0
-USBDP
+USBD_P
 Wire Wire Line
 	4150 3800 4650 3800
 Wire Wire Line
@@ -585,9 +583,9 @@ XTIN
 Text Label 4050 2400 0    50   ~ 0
 RESET
 Text Label 2350 2100 0    50   ~ 0
-USBDM_IN
+IN_USBD_N
 Text Label 2350 2000 0    50   ~ 0
-USBDP_IN
+IN_USBD_P
 Wire Wire Line
 	3500 2100 4650 2100
 Wire Wire Line
@@ -654,4 +652,55 @@ Wire Wire Line
 Connection ~ 3350 2800
 Wire Wire Line
 	3350 2800 3350 2950
+NoConn ~ 4650 2200
+NoConn ~ 4650 2700
+NoConn ~ 4650 2800
+NoConn ~ 4650 2900
+NoConn ~ 4650 3000
+NoConn ~ 4650 3100
+NoConn ~ 4650 3200
+NoConn ~ 4650 3300
+NoConn ~ 4650 3400
+NoConn ~ 4650 3500
+NoConn ~ 4650 3600
+NoConn ~ 4650 3700
+NoConn ~ 4650 4000
+NoConn ~ 4650 4100
+NoConn ~ 4650 4200
+NoConn ~ 4650 4300
+NoConn ~ 4650 4400
+NoConn ~ 4650 4500
+NoConn ~ 4650 4600
+NoConn ~ 4650 4700
+NoConn ~ 4650 4800
+NoConn ~ 4650 4900
+NoConn ~ 4650 5000
+NoConn ~ 5850 2900
+NoConn ~ 5850 2700
+NoConn ~ 1650 2200
+Wire Wire Line
+	1650 1900 2000 1900
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5F9D554F
+P 4000 1550
+F 0 "#FLG0101" H 4000 1625 50  0001 C CNN
+F 1 "PWR_FLAG" H 4000 1723 50  0000 C CNN
+F 2 "" H 4000 1550 50  0001 C CNN
+F 3 "~" H 4000 1550 50  0001 C CNN
+	1    4000 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 5F9D8D04
+P 5950 1750
+F 0 "#FLG0102" H 5950 1825 50  0001 C CNN
+F 1 "PWR_FLAG" V 5950 1878 50  0000 L CNN
+F 2 "" H 5950 1750 50  0001 C CNN
+F 3 "~" H 5950 1750 50  0001 C CNN
+	1    5950 1750
+	0    1    1    0   
+$EndComp
+Connection ~ 5950 1750
 $EndSCHEMATC

@@ -6,7 +6,7 @@ encoding utf-8
 Sheet 3 5
 Title "DC-DC Converter"
 Date "2020-10-17"
-Rev "6"
+Rev "7"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -87,7 +87,7 @@ Wire Wire Line
 Wire Wire Line
 	7850 4150 7850 4400
 Wire Wire Line
-	6000 3750 6800 3750
+	6000 3750 6500 3750
 Wire Wire Line
 	6000 4050 6000 4150
 Wire Wire Line
@@ -129,4 +129,18 @@ Text HLabel 6750 3950 0    50   Input ~ 0
 ON-~OFF
 Wire Wire Line
 	6750 3950 6800 3950
+$Comp
+L power:PWR_FLAG #FLG0103
+U 1 1 5F9D90BB
+P 6500 3750
+F 0 "#FLG0103" H 6500 3825 50  0001 C CNN
+F 1 "PWR_FLAG" H 6500 3923 50  0000 C CNN
+F 2 "" H 6500 3750 50  0001 C CNN
+F 3 "~" H 6500 3750 50  0001 C CNN
+	1    6500 3750
+	1    0    0    -1  
+$EndComp
+Connection ~ 6500 3750
+Wire Wire Line
+	6500 3750 6800 3750
 $EndSCHEMATC

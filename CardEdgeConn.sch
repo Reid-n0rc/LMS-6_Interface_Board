@@ -6,7 +6,7 @@ encoding utf-8
 Sheet 4 5
 Title "Card Connector"
 Date "2020-10-17"
-Rev "6"
+Rev "7"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -255,91 +255,6 @@ Text HLabel 2250 1400 0    50   Input ~ 0
 ST7-RESET
 Text HLabel 2250 1300 0    50   Input ~ 0
 ST7-ICCCLK
-$Comp
-L Connector_Generic:Conn_02x05_Odd_Even J7
-U 1 1 5F836EA0
-P 8300 2650
-F 0 "J7" H 8350 3067 50  0000 C CNN
-F 1 "302-S101" H 8350 2976 50  0000 C CNN
-F 2 "digikey-footprints:PinHeader_2x5_P2.54mm_Drill1.2mm" H 8300 2650 50  0001 C CNN
-F 3 "http://www.on-shore.com/wp-content/uploads/2018/04/302-SXX1.pdf" H 8300 2650 50  0001 C CNN
-F 4 "302-S101" H 8300 2650 50  0001 C CNN "MPN"
-F 5 "On Shore Technology Inc." H 8300 2650 50  0001 C CNN "Maufacturer"
-	1    8300 2650
-	1    0    0    -1  
-$EndComp
-Text HLabel 8600 2750 2    50   Input ~ 0
-ST7-ICCSEL
-Text HLabel 8600 2450 2    50   Input ~ 0
-ST7-ICCDATA
-Text HLabel 8600 2650 2    50   Input ~ 0
-ST7-RESET
-Text HLabel 8600 2550 2    50   Input ~ 0
-ST7-ICCCLK
-$Comp
-L power:VDD #PWR?
-U 1 1 5F83EE0B
-P 7550 2650
-AR Path="/5F83EE0B" Ref="#PWR?"  Part="1" 
-AR Path="/5F7BE189/5F83EE0B" Ref="#PWR?"  Part="1" 
-AR Path="/5F7C6408/5F83EE0B" Ref="#PWR015"  Part="1" 
-F 0 "#PWR015" H 7550 2500 50  0001 C CNN
-F 1 "VDD" H 7565 2823 50  0000 C CNN
-F 2 "" H 7550 2650 50  0001 C CNN
-F 3 "" H 7550 2650 50  0001 C CNN
-	1    7550 2650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8100 2750 7550 2750
-Wire Wire Line
-	7550 2750 7550 2650
-$Comp
-L power:GND #PWR?
-U 1 1 5F840CF8
-P 8000 3000
-AR Path="/5F840CF8" Ref="#PWR?"  Part="1" 
-AR Path="/5F7BE189/5F840CF8" Ref="#PWR?"  Part="1" 
-AR Path="/5F7C6408/5F840CF8" Ref="#PWR016"  Part="1" 
-F 0 "#PWR016" H 8000 2750 50  0001 C CNN
-F 1 "GND" H 8005 2827 50  0000 C CNN
-F 2 "" H 8000 3000 50  0001 C CNN
-F 3 "" H 8000 3000 50  0001 C CNN
-	1    8000 3000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8000 2450 8100 2450
-Wire Wire Line
-	8000 2450 8000 2550
-Wire Wire Line
-	8100 2650 8000 2650
-Connection ~ 8000 2650
-Wire Wire Line
-	8000 2650 8000 3000
-Wire Wire Line
-	8100 2550 8000 2550
-Connection ~ 8000 2550
-Wire Wire Line
-	8000 2550 8000 2650
-$Comp
-L power:GND #PWR?
-U 1 1 5F845227
-P 8650 3000
-AR Path="/5F845227" Ref="#PWR?"  Part="1" 
-AR Path="/5F7BE189/5F845227" Ref="#PWR?"  Part="1" 
-AR Path="/5F7C6408/5F845227" Ref="#PWR017"  Part="1" 
-F 0 "#PWR017" H 8650 2750 50  0001 C CNN
-F 1 "GND" H 8655 2827 50  0000 C CNN
-F 2 "" H 8650 3000 50  0001 C CNN
-F 3 "" H 8650 3000 50  0001 C CNN
-	1    8650 3000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8600 2850 8650 2850
-Wire Wire Line
-	8650 2850 8650 3000
 Text HLabel 4350 1800 2    50   Input ~ 0
 HEADER1.1
 Text HLabel 4350 2200 2    50   Input ~ 0
@@ -379,19 +294,19 @@ Wire Wire Line
 $Comp
 L power:+9V #PWR?
 U 1 1 5F8BD332
-P 4050 4500
+P 4350 4500
 AR Path="/5F8BD332" Ref="#PWR?"  Part="1" 
 AR Path="/5F7BE189/5F8BD332" Ref="#PWR?"  Part="1" 
 AR Path="/5F7C6408/5F8BD332" Ref="#PWR014"  Part="1" 
-F 0 "#PWR014" H 4050 4350 50  0001 C CNN
-F 1 "+9V" H 4065 4673 50  0000 C CNN
-F 2 "" H 4050 4500 50  0001 C CNN
-F 3 "" H 4050 4500 50  0001 C CNN
-	1    4050 4500
+F 0 "#PWR014" H 4350 4350 50  0001 C CNN
+F 1 "+9V" H 4365 4673 50  0000 C CNN
+F 2 "" H 4350 4500 50  0001 C CNN
+F 3 "" H 4350 4500 50  0001 C CNN
+	1    4350 4500
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4050 4700 4050 4500
+	4350 4700 4350 4500
 $Comp
 L power:+BATT #PWR?
 U 1 1 5F8C0163
@@ -406,8 +321,6 @@ F 3 "" H 3750 4500 50  0001 C CNN
 	1    3750 4500
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3550 4700 4050 4700
 Wire Wire Line
 	3750 4500 3750 4600
 Wire Wire Line
@@ -573,4 +486,41 @@ F 5 "61300311121" H 3350 4700 50  0001 C CNN "MPN"
 	1    3350 4700
 	-1   0    0    -1  
 $EndComp
+$Comp
+L power:PWR_FLAG #FLG0104
+U 1 1 5F9F7887
+P 2500 1200
+F 0 "#FLG0104" H 2500 1275 50  0001 C CNN
+F 1 "PWR_FLAG" V 2500 1327 50  0000 L CNN
+F 2 "" H 2500 1200 50  0001 C CNN
+F 3 "~" H 2500 1200 50  0001 C CNN
+	1    2500 1200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0105
+U 1 1 5F9F87AF
+P 1700 3100
+F 0 "#FLG0105" H 1700 3175 50  0001 C CNN
+F 1 "PWR_FLAG" H 1700 3273 50  0000 C CNN
+F 2 "" H 1700 3100 50  0001 C CNN
+F 3 "~" H 1700 3100 50  0001 C CNN
+	1    1700 3100
+	-1   0    0    1   
+$EndComp
+Connection ~ 1700 3100
+$Comp
+L power:PWR_FLAG #FLG0106
+U 1 1 5F9F8AAB
+P 3750 4600
+F 0 "#FLG0106" H 3750 4675 50  0001 C CNN
+F 1 "PWR_FLAG" V 3750 4728 50  0000 L CNN
+F 2 "" H 3750 4600 50  0001 C CNN
+F 3 "~" H 3750 4600 50  0001 C CNN
+	1    3750 4600
+	0    1    1    0   
+$EndComp
+Connection ~ 3750 4600
+Wire Wire Line
+	3550 4700 4350 4700
 $EndSCHEMATC
