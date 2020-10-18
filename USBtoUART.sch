@@ -601,7 +601,7 @@ F 0 "Y1" V 3100 2950 50  0000 L CNN
 F 1 "CSTNR6M00GH5C000R0" H 3550 3050 50  0000 L CNN
 F 2 "LMS-6_Interface_Board:CSTNR_Resonator" H 3325 3100 50  0001 C CNN
 F 3 "http://www.murata.com/products/productdata/8801159675934/SPEC-CSTNR4M00GH5L000R0.pdf" H 3325 3100 50  0001 C CNN
-F 4 "Murata Electronics" H 3350 3100 50  0001 C CNN "Manufacaturer"
+F 4 "Murata Electronics" H 3350 3100 50  0001 C CNN "Manufacturer"
 F 5 "CSTNR6M00GH5C000R0" H 3350 3100 50  0001 C CNN "MPN"
 	1    3350 3100
 	0    1    1    0   

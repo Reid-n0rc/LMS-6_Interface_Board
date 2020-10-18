@@ -112,8 +112,8 @@ F 4 "Fixed Inductors" H 5800 3600 50  0001 L CNN "Description"
 F 5 "3.7" H 5800 3500 50  0001 L CNN "Height"
 F 6 "495-TCK-154" H 5800 3400 50  0001 L CNN "Mouser Part Number"
 F 7 "https://www.mouser.co.uk/ProductDetail/TRACO-Power/TCK-154?qs=w%2Fv1CP2dgqrcxTwKbnHwhQ%3D%3D" H 5800 3300 50  0001 L CNN "Mouser Price/Stock"
-F 8 "Traco Power" H 5800 3200 50  0001 L CNN "Manufacturer_Name"
-F 9 "TCK-154" H 5800 3100 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "Traco Power" H 5800 3200 50  0001 L CNN "Manufacturer"
+F 9 "TCK-154" H 5800 3100 50  0001 L CNN "MPN"
 	1    5150 3750
 	1    0    0    -1  
 $EndComp
