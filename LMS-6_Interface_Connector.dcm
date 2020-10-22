@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP EBC20DRAS
+D Generic connector, double row, 02x20, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)
+K connector
+F https://drawings-pdf.s3.amazonaws.com/C10876.pdf
+$ENDCMP
+#
+#End Doc Library

@@ -6,12 +6,12 @@ encoding utf-8
 Sheet 1 5
 Title "LMS6 Interface Board"
 Date "2020-10-17"
-Rev "7"
+Rev "9"
 Comp ""
-Comment1 "Rev 4: Fixed J9 hanging over border of sheet."
-Comment2 "Rev 5: Fixed J6 footprint and MPN info."
-Comment3 "Rev 6: Fixed footprint issues. Changed J9 connections for layout. Changed Y1."
-Comment4 "Rev 7: Ran DRC and fixed errors with flags to make rixon happy."
+Comment1 "Rev 6: Fixed footprint issues. Changed J9 connections for layout. Changed Y1."
+Comment2 "Rev 7: Ran DRC and fixed errors with flags to make rixon happy."
+Comment3 "Rev 8: J5 changed to edge connector"
+Comment4 "Rev 9: J9 Modified to help with routing."
 $EndDescr
 $Sheet
 S 2650 4250 1050 650 
@@ -61,27 +61,27 @@ S 6750 3250 2700 2750
 U 5F7C6408
 F0 "Card Edge Conn" 50
 F1 "CardEdgeConn.sch" 50
-F2 "U21.20-DCLK" I R 9450 5100 50 
-F3 "SW1.1" I R 9450 4700 50 
+F2 "U21.20-DCLK" I R 9450 5200 50 
+F3 "SW1.1" I R 9450 4800 50 
 F4 "GPS.TXD" I L 6750 4450 50 
 F5 "U22.3" I R 9450 4100 50 
 F6 "J5.3" I R 9450 3900 50 
-F7 "SW1.3" I R 9450 3700 50 
-F8 "U3.18" I R 9450 3500 50 
+F7 "SW1.3" I R 9450 3800 50 
+F8 "U3.18" I R 9450 3600 50 
 F9 "GPS.RXD" I L 6750 4550 50 
 F10 "U3.19" I L 6750 4900 50 
-F11 "SW1.2" I R 9450 4800 50 
+F11 "SW1.2" I R 9450 4700 50 
 F12 "SW1.4" I R 9450 4900 50 
-F13 "J5.2" I R 9450 5200 50 
+F13 "J5.2" I R 9450 5100 50 
 F14 "HEADER1.1" I R 9450 5000 50 
 F15 "HEADER1.2" I R 9450 4600 50 
 F16 "HEADER1.3" I R 9450 4500 50 
-F17 "HEADER1.4" I R 9450 4200 50 
+F17 "HEADER1.4" I R 9450 4300 50 
 F18 "HEADER1.5" I R 9450 4400 50 
-F19 "HEADER1.6" I R 9450 4300 50 
+F19 "HEADER1.6" I R 9450 4200 50 
 F20 "HEADER1.7" I R 9450 4000 50 
-F21 "HEADER1.9" I R 9450 3800 50 
-F22 "HEADER1.10" I R 9450 3600 50 
+F21 "HEADER1.9" I R 9450 3700 50 
+F22 "HEADER1.10" I R 9450 3500 50 
 F23 "9V_PS" I L 6750 3300 50 
 F24 "ST7-ICCSEL" I L 6750 5650 50 
 F25 "ST7-ICCDATA" I L 6750 5350 50 
@@ -97,15 +97,15 @@ Wire Wire Line
 $Comp
 L Connector_Generic:Conn_02x18_Odd_Even J9
 U 1 1 5F8F3B51
-P 9850 4300
-F 0 "J9" H 9900 5317 50  0000 C CNN
-F 1 "Conn_02x18_Odd_Even" H 9900 5226 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x18_P2.54mm_Vertical" H 9850 4300 50  0001 C CNN
-F 3 "https://drawings-pdf.s3.amazonaws.com/11636.pdf" H 9850 4300 50  0001 C CNN
-F 4 "Sullins Connector Solutions" H 9850 4300 50  0001 C CNN "Manufacturer"
-F 5 "PREC020DAAN-RC" H 9850 4300 50  0001 C CNN "MPN"
-	1    9850 4300
-	1    0    0    -1  
+P 9850 4400
+F 0 "J9" H 9900 5417 50  0000 C CNN
+F 1 "Conn_02x18_Odd_Even" H 9900 5326 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x18_P2.54mm_Vertical" H 9850 4400 50  0001 C CNN
+F 3 "https://drawings-pdf.s3.amazonaws.com/11636.pdf" H 9850 4400 50  0001 C CNN
+F 4 "Sullins Connector Solutions" H 9850 4400 50  0001 C CNN "Manufacturer"
+F 5 "PREC020DAAN-RC" H 9850 4400 50  0001 C CNN "MPN"
+	1    9850 4400
+	1    0    0    1   
 $EndComp
 $Comp
 L power:GND #PWR018
@@ -379,10 +379,6 @@ Wire Notes Line
 Wire Notes Line
 	5900 2350 5900 1350
 Wire Wire Line
-	9450 3500 9650 3500
-Wire Wire Line
-	9450 3600 9650 3600
-Wire Wire Line
 	9450 3700 9650 3700
 Wire Wire Line
 	9450 3800 9650 3800
@@ -511,4 +507,8 @@ Wire Wire Line
 	5900 5550 6750 5550
 Wire Wire Line
 	5900 5650 6750 5650
+Wire Wire Line
+	9450 3500 9650 3500
+Wire Wire Line
+	9450 3600 9650 3600
 $EndSCHEMATC

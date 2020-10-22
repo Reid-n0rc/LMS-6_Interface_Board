@@ -6,7 +6,7 @@ encoding utf-8
 Sheet 4 5
 Title "Card Connector"
 Date "2020-10-17"
-Rev "7"
+Rev "9"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -205,22 +205,6 @@ F 1 "GND" H 3655 3077 50  0000 C CNN
 F 2 "" H 3650 3250 50  0001 C CNN
 F 3 "" H 3650 3250 50  0001 C CNN
 	1    3650 3250
-	1    0    0    -1  
-$EndComp
-$Comp
-L Programmer_Board:5-5530843-4 J?
-U 1 1 5F7D09C4
-P 3150 3200
-AR Path="/5F7D09C4" Ref="J?"  Part="1" 
-AR Path="/5F7BE189/5F7D09C4" Ref="J?"  Part="1" 
-AR Path="/5F7C6408/5F7D09C4" Ref="J5"  Part="1" 
-F 0 "J5" H 3150 5425 50  0000 C CNN
-F 1 "5-5530843-4" H 3150 5334 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x20_P2.54mm_Vertical" H 3150 3200 50  0001 C CNN
-F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=5530843&DocType=Customer+Drawing&DocLang=English" H 3150 3200 50  0001 C CNN
-F 4 "5-5530843-4" H 3150 3200 50  0001 C CNN "MPN"
-F 5 "TE Connectivity AMP Connectors" H 3150 3200 50  0001 C CNN "Manufacturer"
-	1    3150 3200
 	1    0    0    -1  
 $EndComp
 Text HLabel 4350 1300 2    50   Input ~ 0
@@ -523,4 +507,15 @@ $EndComp
 Connection ~ 3750 4600
 Wire Wire Line
 	3550 4700 4350 4700
+$Comp
+L LMS-6_Interface_Connector:EBC20DRAS J5
+U 1 1 5F8E17E9
+P 3100 2100
+F 0 "J5" H 3150 3217 50  0000 C CNN
+F 1 "EBC20DRAS" H 3150 3126 50  0000 C CNN
+F 2 "LMS-6_Interface_Board:EBC20DRAS" H 3100 2100 50  0001 C CNN
+F 3 "https://drawings-pdf.s3.amazonaws.com/C10876.pdf" H 3100 2100 50  0001 C CNN
+	1    3100 2100
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
