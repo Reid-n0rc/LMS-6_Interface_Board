@@ -6,12 +6,12 @@ encoding utf-8
 Sheet 1 5
 Title "LMS6 Interface Board"
 Date "2020-10-17"
-Rev "9"
+Rev "10"
 Comp ""
-Comment1 "Rev 6: Fixed footprint issues. Changed J9 connections for layout. Changed Y1."
-Comment2 "Rev 7: Ran DRC and fixed errors with flags to make rixon happy."
-Comment3 "Rev 8: J5 changed to edge connector"
-Comment4 "Rev 9: J9 Modified to help with routing."
+Comment1 "Rev 7: Ran DRC and fixed errors with flags to make rixon happy."
+Comment2 "Rev 8: J5 changed to edge connector"
+Comment3 "Rev 9: J9 Modified to help with routing."
+Comment4 "10/22/2020 Rev 10: Updated U3 part number and Manufact props"
 $EndDescr
 $Sheet
 S 2650 4250 1050 650 
@@ -103,7 +103,7 @@ F 1 "Conn_02x18_Odd_Even" H 9900 5326 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_2x18_P2.54mm_Vertical" H 9850 4400 50  0001 C CNN
 F 3 "https://drawings-pdf.s3.amazonaws.com/11636.pdf" H 9850 4400 50  0001 C CNN
 F 4 "Sullins Connector Solutions" H 9850 4400 50  0001 C CNN "Manufacturer"
-F 5 "PREC020DAAN-RC" H 9850 4400 50  0001 C CNN "MPN"
+F 5 "PREC018DAAN-RC" H 9850 4400 50  0001 C CNN "MPN"
 	1    9850 4400
 	1    0    0    1   
 $EndComp

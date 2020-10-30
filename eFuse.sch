@@ -14,17 +14,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L power_LMS6:TPS25921x U3
-U 1 1 5F9193A1
-P 5600 3050
-F 0 "U3" H 5550 4015 50  0000 C CNN
-F 1 "TPS25921x" H 5550 3924 50  0000 C CNN
-F 2 "LMS-6_Interface_Board:SOIC-8_W5.4mm" H 5530 3890 50  0001 C CNN
-F 3 "https://www.ti.com/lit/ds/symlink/tps25921l.pdf" H 5530 3890 50  0001 C CNN
-	1    5600 3050
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:R_US R?
 U 1 1 5F922388
 P 4500 2500
@@ -235,4 +224,17 @@ Wire Wire Line
 	6200 3150 6200 3050
 Text Notes 7450 2300 0    50   ~ 0
 Power Failure Detection Threshold: ... 4.62V\nRelease UVLO, Enable Chip: ............... 4.79V\nOver Voltage Cut-off: ....................... 16.76V\nRelease OV: ..................................... 16.16 V\n\nCurrent LImit: ..................................  1.51 A\nCurrent LImit Fast Trip: .................... 2.39 A
+$Comp
+L power_LMS6:TPS25921ADR U3
+U 1 1 5F934945
+P 5600 3050
+F 0 "U3" H 5550 4015 50  0000 C CNN
+F 1 "TPS25921ADR" H 5550 3924 50  0000 C CNN
+F 2 "LMS-6_Interface_Board:SOIC-8_W5.4mm" H 5530 3890 50  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/tps25921l.pdf" H 5530 3890 50  0001 C CNN
+F 4 "Texas Instruments" H 5550 4015 50  0001 C CNN "Manufacturer"
+F 5 "TPS25921ADR" H 5550 3924 50  0001 C CNN "MPN"
+	1    5600 3050
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

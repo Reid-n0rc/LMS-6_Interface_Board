@@ -54,9 +54,9 @@ P 6000 3900
 F 0 "C9" H 6115 3946 50  0000 L CNN
 F 1 "4.7uF" H 6115 3855 50  0000 L CNN
 F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder" H 6038 3750 50  0001 C CNN
-F 3 "https://product.tdk.com/info/en/catalog/datasheets/mlcc_commercial_general_en.pdf?ref_disty=digikey" H 6000 3900 50  0001 C CNN
-F 4 "TDK Corporation" H 6000 3900 50  0001 C CNN "Manufacturer"
-F 5 "C3216X7R1E475K160AC" H 6000 3900 50  0001 C CNN "MPN"
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/Samsung%20PDFs/CL_Series_MLCC_ds.pdf" H 6000 3900 50  0001 C CNN
+F 4 "Samsung Electro-Mechanics" H 6000 3900 50  0001 C CNN "Manufacturer"
+F 5 "CL31B475KAHNNNE" H 6000 3900 50  0001 C CNN "MPN"
 	1    6000 3900
 	1    0    0    -1  
 $EndComp
@@ -123,7 +123,7 @@ Connection ~ 6000 3750
 Wire Wire Line
 	5150 3750 5050 3750
 Connection ~ 5050 3750
-Text Notes 4450 3500 0    50   ~ 0
+Text Notes 3600 3800 0    50   ~ 0
 V_in Range: 4.5-18 V
 Text HLabel 6750 3950 0    50   Input ~ 0
 ON-~OFF
@@ -143,4 +143,6 @@ $EndComp
 Connection ~ 6500 3750
 Wire Wire Line
 	6500 3750 6800 3750
+Text Notes 4650 3250 0    50   ~ 0
+1206 0 ohm used in place of L1 because\nL1 is not in stock at Digi-Key as of 10/22/2020
 $EndSCHEMATC
