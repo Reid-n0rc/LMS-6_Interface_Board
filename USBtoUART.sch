@@ -205,11 +205,7 @@ F 5 "CRG0805F27R" V 3350 2100 50  0001 C CNN "MPN"
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	1650 2000 2700 2000
-Wire Wire Line
 	3000 2000 3900 2000
-Wire Wire Line
-	1650 2100 3200 2100
 $Comp
 L Device:R_US R3
 U 1 1 5F85D849
@@ -582,9 +578,9 @@ Text Label 3600 2600 0    50   ~ 0
 XTIN
 Text Label 4050 2400 0    50   ~ 0
 RESET
-Text Label 2350 2100 0    50   ~ 0
+Text Label 2200 2100 0    50   ~ 0
 IN_USBD_N
-Text Label 2350 2000 0    50   ~ 0
+Text Label 2200 2200 0    50   ~ 0
 IN_USBD_P
 Wire Wire Line
 	3500 2100 4650 2100
@@ -703,4 +699,18 @@ F 3 "~" H 5950 1750 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Connection ~ 5950 1750
+Wire Wire Line
+	1650 2100 2100 2100
+Wire Wire Line
+	2100 2100 2100 2200
+Wire Wire Line
+	2100 2200 2700 2200
+Wire Wire Line
+	2700 2200 2700 2000
+Wire Wire Line
+	1650 2000 2150 2000
+Wire Wire Line
+	2150 2000 2150 2100
+Wire Wire Line
+	2150 2100 3200 2100
 $EndSCHEMATC
