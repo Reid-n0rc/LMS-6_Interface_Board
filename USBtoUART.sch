@@ -504,7 +504,7 @@ AR Path="/5F917C06/5F9390C2" Ref="D?"  Part="1"
 AR Path="/5F8460BD/5F9390C2" Ref="D2"  Part="1" 
 F 0 "D2" H 7750 3037 60  0000 C CNN
 F 1 "LG R971-KN-1" H 7750 2931 60  0000 C CNN
-F 2 "digikey-footprints:0805" H 8000 2900 60  0001 L CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 8000 2900 60  0001 L CNN
 F 3 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493888/LH%20R974.pdf" H 8000 3000 60  0001 L CNN
 F 4 "475-1410-1-ND" H 8000 3100 60  0001 L CNN "Digi-Key_PN"
 F 5 "LG R971-KN-1" H 8000 3200 60  0001 L CNN "MPN"

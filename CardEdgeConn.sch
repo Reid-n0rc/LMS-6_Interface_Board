@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
-Sheet 4 5
+Sheet 5 5
 Title "Card Connector"
 Date "2020-10-17"
 Rev "9"
@@ -276,22 +276,6 @@ Wire Wire Line
 Wire Wire Line
 	3400 1800 4350 1800
 $Comp
-L power:+9V #PWR?
-U 1 1 5F8BD332
-P 4350 4500
-AR Path="/5F8BD332" Ref="#PWR?"  Part="1" 
-AR Path="/5F7BE189/5F8BD332" Ref="#PWR?"  Part="1" 
-AR Path="/5F7C6408/5F8BD332" Ref="#PWR014"  Part="1" 
-F 0 "#PWR014" H 4350 4350 50  0001 C CNN
-F 1 "+9V" H 4365 4673 50  0000 C CNN
-F 2 "" H 4350 4500 50  0001 C CNN
-F 3 "" H 4350 4500 50  0001 C CNN
-	1    4350 4500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4350 4700 4350 4500
-$Comp
 L power:+BATT #PWR?
 U 1 1 5F8C0163
 P 3750 4500
@@ -384,7 +368,7 @@ AR Path="/5F8460BD/5F959F13" Ref="D?"  Part="1"
 AR Path="/5F7C6408/5F959F13" Ref="D3"  Part="1" 
 F 0 "D3" H 6450 4237 60  0000 C CNN
 F 1 "LG R971-KN-1" H 6450 4131 60  0000 C CNN
-F 2 "digikey-footprints:0805" H 6700 4100 60  0001 L CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6700 4100 60  0001 L CNN
 F 3 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493888/LH%20R974.pdf" H 6700 4200 60  0001 L CNN
 F 4 "475-1410-1-ND" H 6700 4300 60  0001 L CNN "Digi-Key_PN"
 F 5 "LG R971-KN-1" H 6700 4400 60  0001 L CNN "MPN"
@@ -505,8 +489,6 @@ F 3 "~" H 3750 4600 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Connection ~ 3750 4600
-Wire Wire Line
-	3550 4700 4350 4700
 $Comp
 L LMS-6_Interface_Connector:EBC20DRAS J5
 U 1 1 5F8E17E9
@@ -518,4 +500,22 @@ F 3 "https://drawings-pdf.s3.amazonaws.com/C10876.pdf" H 3100 2100 50  0001 C CN
 	1    3100 2100
 	1    0    0    -1  
 $EndComp
+$Comp
+L power:+9V #PWR?
+U 1 1 5F8BD332
+P 4350 4500
+AR Path="/5F8BD332" Ref="#PWR?"  Part="1" 
+AR Path="/5F7BE189/5F8BD332" Ref="#PWR?"  Part="1" 
+AR Path="/5F7C6408/5F8BD332" Ref="#PWR014"  Part="1" 
+F 0 "#PWR014" H 4350 4350 50  0001 C CNN
+F 1 "+9V" H 4365 4673 50  0000 C CNN
+F 2 "" H 4350 4500 50  0001 C CNN
+F 3 "" H 4350 4500 50  0001 C CNN
+	1    4350 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 4700 4350 4700
+Wire Wire Line
+	4350 4700 4350 4500
 $EndSCHEMATC
