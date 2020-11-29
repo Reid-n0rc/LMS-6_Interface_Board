@@ -1,4 +1,4 @@
 (fp_lib_table
-  (lib (name digikey-footprints)(type KiCad)(uri "C:/Users/Reid/Documents/KiCad Projects/Symbols/digikey-kicad-library-master/digikey-footprints.pretty")(options "")(descr ""))
-  (lib (name LMS-6_Interface_Board)(type KiCad)(uri ${KIPRJMOD}/LMS-6_Interface_Board.pretty)(options "")(descr ""))
+  (lib (name LMS-6_Interface_Board)(type KiCad)(uri "C:/Users/Reid/Documents/KiCad Projects/Programmer Board/LMS-6_Interface_Board/Symbol-Footprint_Libraries/LMS-6_Interface_Board.pretty")(options "")(descr ""))
+  (lib (name digikey-kicad-library)(type KiCad)(uri "C:/Users/Reid/Documents/KiCad Projects/Symbols/digikey-kicad-library")(options "")(descr ""))
 )

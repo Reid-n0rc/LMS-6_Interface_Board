@@ -205,11 +205,7 @@ F 5 "CRG0805F27R" V 3350 2100 50  0001 C CNN "MPN"
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	1650 2000 2700 2000
-Wire Wire Line
 	3000 2000 3900 2000
-Wire Wire Line
-	1650 2100 3200 2100
 $Comp
 L Device:R_US R3
 U 1 1 5F85D849
@@ -508,7 +504,7 @@ AR Path="/5F917C06/5F9390C2" Ref="D?"  Part="1"
 AR Path="/5F8460BD/5F9390C2" Ref="D2"  Part="1" 
 F 0 "D2" H 7750 3037 60  0000 C CNN
 F 1 "LG R971-KN-1" H 7750 2931 60  0000 C CNN
-F 2 "digikey-footprints:0805" H 8000 2900 60  0001 L CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 8000 2900 60  0001 L CNN
 F 3 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493888/LH%20R974.pdf" H 8000 3000 60  0001 L CNN
 F 4 "475-1410-1-ND" H 8000 3100 60  0001 L CNN "Digi-Key_PN"
 F 5 "LG R971-KN-1" H 8000 3200 60  0001 L CNN "MPN"
@@ -582,9 +578,9 @@ Text Label 3600 2600 0    50   ~ 0
 XTIN
 Text Label 4050 2400 0    50   ~ 0
 RESET
-Text Label 2350 2100 0    50   ~ 0
+Text Label 2200 2100 0    50   ~ 0
 IN_USBD_N
-Text Label 2350 2000 0    50   ~ 0
+Text Label 2200 2200 0    50   ~ 0
 IN_USBD_P
 Wire Wire Line
 	3500 2100 4650 2100
@@ -703,4 +699,18 @@ F 3 "~" H 5950 1750 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Connection ~ 5950 1750
+Wire Wire Line
+	1650 2100 2100 2100
+Wire Wire Line
+	2100 2100 2100 2200
+Wire Wire Line
+	2100 2200 2700 2200
+Wire Wire Line
+	2700 2200 2700 2000
+Wire Wire Line
+	1650 2000 2150 2000
+Wire Wire Line
+	2150 2000 2150 2100
+Wire Wire Line
+	2150 2100 3200 2100
 $EndSCHEMATC
