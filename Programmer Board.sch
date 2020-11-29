@@ -5,13 +5,13 @@ $Descr USLetter 11000 8500
 encoding utf-8
 Sheet 1 5
 Title "LMS6 Interface Board"
-Date "2020-10-17"
-Rev "10"
+Date "2020-11-27"
+Rev "11"
 Comp ""
-Comment1 "Rev 7: Ran DRC and fixed errors with flags to make rixon happy."
-Comment2 "Rev 8: J5 changed to edge connector"
-Comment3 "Rev 9: J9 Modified to help with routing."
-Comment4 "10/22/2020 Rev 10: Updated U3 part number and Manufact props"
+Comment1 "Rev 8: J5 changed to edge connector"
+Comment2 "Rev 9: J9 Modified to help with routing."
+Comment3 "10/22/2020 Rev 10: Updated U3 part number and Manufact props"
+Comment4 "11/27/2020 Rev 11: Implemented PCB Rev C Changes"
 $EndDescr
 $Sheet
 S 4800 3100 950  450 
@@ -562,7 +562,7 @@ Wire Wire Line
 $Sheet
 S 2100 5400 1050 650 
 U 5FC88692
-F0 "sheet5FC8868D" 50
+F0 "USBtoUART2" 50
 F1 "USBtoUART1.sch" 50
 F2 "+5_USB" O L 2100 5600 50 
 F3 "TXD" O R 3150 5600 50 

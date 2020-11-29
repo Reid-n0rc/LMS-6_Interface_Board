@@ -3,10 +3,10 @@ EELAYER 30 0
 EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
-Sheet 5 5
+Sheet 4 5
 Title "Card Connector"
-Date "2020-10-17"
-Rev "9"
+Date "2020-11-27"
+Rev "11"
 Comp ""
 Comment1 ""
 Comment2 ""

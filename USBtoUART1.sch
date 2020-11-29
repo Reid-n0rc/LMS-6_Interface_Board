@@ -3,10 +3,10 @@ EELAYER 30 0
 EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
-Sheet 5 5
+Sheet 3 5
 Title "USB to UART"
-Date "2020-10-17"
-Rev "9"
+Date "2020-11-27"
+Rev "11"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -21,7 +21,7 @@ AR Path="/5F8460BD/5F847751" Ref="J4"  Part="1"
 AR Path="/5FBD4C51/5F847751" Ref="J?"  Part="1" 
 AR Path="/5FBEFA6B/5F847751" Ref="J?"  Part="1" 
 AR Path="/5FC88692/5F847751" Ref="J3"  Part="1" 
-F 0 "J3" H 1364 4145 60  0000 C CNN
+F 0 "J4" H 1364 4145 60  0000 C CNN
 F 1 "UJ2-MIBH-4-SMT-TR" H 1364 4039 60  0000 C CNN
 F 2 "digikey-footprints:USB_Micro_B_Male_UJ2-MIBH-4-SMT-TR" H 1500 3600 60  0001 L CNN
 F 3 "https://www.cui.com/product/resource/digikeypdf/uj2-mibh-4-smt.pdf" H 1500 3700 60  0001 L CNN
@@ -45,7 +45,7 @@ AR Path="/5F8460BD/5F848CF8" Ref="#PWR03"  Part="1"
 AR Path="/5FBD4C51/5F848CF8" Ref="#PWR?"  Part="1" 
 AR Path="/5FBEFA6B/5F848CF8" Ref="#PWR?"  Part="1" 
 AR Path="/5FC88692/5F848CF8" Ref="#PWR0114"  Part="1" 
-F 0 "#PWR0114" H 1800 3550 50  0001 C CNN
+F 0 "#PWR03" H 1800 3550 50  0001 C CNN
 F 1 "GND" H 1805 3627 50  0000 C CNN
 F 2 "" H 1800 3800 50  0001 C CNN
 F 3 "" H 1800 3800 50  0001 C CNN
@@ -60,7 +60,7 @@ AR Path="/5F8460BD/5F84934E" Ref="FB1"  Part="1"
 AR Path="/5FBD4C51/5F84934E" Ref="FB?"  Part="1" 
 AR Path="/5FBEFA6B/5F84934E" Ref="FB?"  Part="1" 
 AR Path="/5FC88692/5F84934E" Ref="FB3"  Part="1" 
-F 0 "FB3" V 1147 4578 60  0000 L CNN
+F 0 "FB1" V 1147 4578 60  0000 L CNN
 F 1 "MPZ2012S601AT000" V 1253 4578 60  0000 L CNN
 F 2 "digikey-footprints:0805" H 1400 4650 60  0001 L CNN
 F 3 "https://product.tdk.com/info/en/catalog/datasheets/beads_commercial_power_mpz2012_en.pdf" H 1400 4750 60  0001 L CNN
@@ -90,7 +90,7 @@ AR Path="/5F8460BD/5F84BCF3" Ref="#PWR02"  Part="1"
 AR Path="/5FBD4C51/5F84BCF3" Ref="#PWR?"  Part="1" 
 AR Path="/5FBEFA6B/5F84BCF3" Ref="#PWR?"  Part="1" 
 AR Path="/5FC88692/5F84BCF3" Ref="#PWR0115"  Part="1" 
-F 0 "#PWR0115" H 1200 4500 50  0001 C CNN
+F 0 "#PWR02" H 1200 4500 50  0001 C CNN
 F 1 "GND" H 1205 4577 50  0000 C CNN
 F 2 "" H 1200 4750 50  0001 C CNN
 F 3 "" H 1200 4750 50  0001 C CNN
@@ -107,7 +107,7 @@ AR Path="/5F8460BD/5F84C701" Ref="FB2"  Part="1"
 AR Path="/5FBD4C51/5F84C701" Ref="FB?"  Part="1" 
 AR Path="/5FBEFA6B/5F84C701" Ref="FB?"  Part="1" 
 AR Path="/5FC88692/5F84C701" Ref="FB4"  Part="1" 
-F 0 "FB4" V 2197 3328 60  0000 L CNN
+F 0 "FB2" V 2197 3328 60  0000 L CNN
 F 1 "MPZ2012S601AT000" V 2303 3328 60  0000 L CNN
 F 2 "digikey-footprints:0805" H 2450 3400 60  0001 L CNN
 F 3 "https://product.tdk.com/info/en/catalog/datasheets/beads_commercial_power_mpz2012_en.pdf" H 2450 3500 60  0001 L CNN
@@ -131,7 +131,7 @@ AR Path="/5F8460BD/5FC4AC4A" Ref="C6"  Part="1"
 AR Path="/5FBD4C51/5FC4AC4A" Ref="C?"  Part="1" 
 AR Path="/5FBEFA6B/5FC4AC4A" Ref="C?"  Part="1" 
 AR Path="/5FC88692/5FC4AC4A" Ref="C2"  Part="1" 
-F 0 "C2" H 6115 3996 50  0000 L CNN
+F 0 "C6" H 6115 3996 50  0000 L CNN
 F 1 "0.1uF" H 6115 3905 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 6000 3950 50  0001 C CNN
 F 3 "https://media.digikey.com/pdf/Data%20Sheets/Samsung%20PDFs/CL21B104KBCNNN_Spec.pdf" H 6000 3950 50  0001 C CNN
@@ -148,7 +148,7 @@ AR Path="/5F8460BD/5F853226" Ref="C7"  Part="1"
 AR Path="/5FBD4C51/5F853226" Ref="C?"  Part="1" 
 AR Path="/5FBEFA6B/5F853226" Ref="C?"  Part="1" 
 AR Path="/5FC88692/5F853226" Ref="C10"  Part="1" 
-F 0 "C10" H 3915 3046 50  0000 L CNN
+F 0 "C7" H 3915 3046 50  0000 L CNN
 F 1 "10uF" H 3915 2955 50  0000 L CNN
 F 2 "Capacitor_Tantalum_SMD:CP_EIA-3216-10_Kemet-I_Pad1.58x1.35mm_HandSolder" H 3800 3000 50  0001 C CNN
 F 3 "Kemet" H 3800 3000 50  0001 C CNN
@@ -164,7 +164,7 @@ AR Path="/5F8460BD/5F85B62B" Ref="R1"  Part="1"
 AR Path="/5FBD4C51/5F85B62B" Ref="R?"  Part="1" 
 AR Path="/5FBEFA6B/5F85B62B" Ref="R?"  Part="1" 
 AR Path="/5FC88692/5F85B62B" Ref="R6"  Part="1" 
-F 0 "R6" V 2595 3500 50  0000 C CNN
+F 0 "R1" V 2595 3500 50  0000 C CNN
 F 1 "27" V 2686 3500 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 2840 3490 50  0001 C CNN
 F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1773204&DocType=DS&DocLang=English" H 2800 3500 50  0001 C CNN
@@ -181,7 +181,7 @@ AR Path="/5F8460BD/5F85C9ED" Ref="R2"  Part="1"
 AR Path="/5FBD4C51/5F85C9ED" Ref="R?"  Part="1" 
 AR Path="/5FBEFA6B/5F85C9ED" Ref="R?"  Part="1" 
 AR Path="/5FC88692/5F85C9ED" Ref="R8"  Part="1" 
-F 0 "R8" V 3095 3400 50  0000 C CNN
+F 0 "R2" V 3095 3400 50  0000 C CNN
 F 1 "27" V 3186 3400 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 3340 3390 50  0001 C CNN
 F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1773204&DocType=DS&DocLang=English" H 3300 3400 50  0001 C CNN
@@ -202,7 +202,7 @@ AR Path="/5F8460BD/5FC4AC4E" Ref="#PWR010"  Part="1"
 AR Path="/5FBD4C51/5FC4AC4E" Ref="#PWR?"  Part="1" 
 AR Path="/5FBEFA6B/5FC4AC4E" Ref="#PWR?"  Part="1" 
 AR Path="/5FC88692/5FC4AC4E" Ref="#PWR0116"  Part="1" 
-F 0 "#PWR0116" H 3800 2900 50  0001 C CNN
+F 0 "#PWR010" H 3800 2900 50  0001 C CNN
 F 1 "GND" H 3805 2977 50  0000 C CNN
 F 2 "" H 3800 3150 50  0001 C CNN
 F 3 "" H 3800 3150 50  0001 C CNN
@@ -219,7 +219,7 @@ AR Path="/5F8460BD/5FC4AC4F" Ref="C3"  Part="1"
 AR Path="/5FBD4C51/5FC4AC4F" Ref="C?"  Part="1" 
 AR Path="/5FBEFA6B/5FC4AC4F" Ref="C?"  Part="1" 
 AR Path="/5FC88692/5FC4AC4F" Ref="C1"  Part="1" 
-F 0 "C1" H 3065 3046 50  0000 L CNN
+F 0 "C3" H 3065 3046 50  0000 L CNN
 F 1 "0.1uF" H 3065 2955 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 2950 3000 50  0001 C CNN
 F 3 "https://media.digikey.com/pdf/Data%20Sheets/Samsung%20PDFs/CL21B104KBCNNN_Spec.pdf" H 2950 3000 50  0001 C CNN
@@ -236,7 +236,7 @@ AR Path="/5F8460BD/5F898B74" Ref="#PWR08"  Part="1"
 AR Path="/5FBD4C51/5F898B74" Ref="#PWR?"  Part="1" 
 AR Path="/5FBEFA6B/5F898B74" Ref="#PWR?"  Part="1" 
 AR Path="/5FC88692/5F898B74" Ref="#PWR0117"  Part="1" 
-F 0 "#PWR0117" H 2950 2900 50  0001 C CNN
+F 0 "#PWR08" H 2950 2900 50  0001 C CNN
 F 1 "GND" H 2955 2977 50  0000 C CNN
 F 2 "" H 2950 3150 50  0001 C CNN
 F 3 "" H 2950 3150 50  0001 C CNN
@@ -260,7 +260,7 @@ AR Path="/5F8460BD/5F9D554F" Ref="#FLG0101"  Part="1"
 AR Path="/5FBD4C51/5F9D554F" Ref="#FLG?"  Part="1" 
 AR Path="/5FBEFA6B/5F9D554F" Ref="#FLG?"  Part="1" 
 AR Path="/5FC88692/5F9D554F" Ref="#FLG0102"  Part="1" 
-F 0 "#FLG0102" H 3950 2925 50  0001 C CNN
+F 0 "#FLG0101" H 3950 2925 50  0001 C CNN
 F 1 "PWR_FLAG" H 3950 3023 50  0000 C CNN
 F 2 "" H 3950 2850 50  0001 C CNN
 F 3 "~" H 3950 2850 50  0001 C CNN
@@ -292,7 +292,7 @@ AR Path="/5F8460BD/5FB7BFA8" Ref="D4"  Part="1"
 AR Path="/5FBD4C51/5FB7BFA8" Ref="D?"  Part="1" 
 AR Path="/5FBEFA6B/5FB7BFA8" Ref="D?"  Part="1" 
 AR Path="/5FC88692/5FB7BFA8" Ref="D1"  Part="1" 
-F 0 "D1" H 2300 4837 60  0000 C CNN
+F 0 "D4" H 2300 4837 60  0000 C CNN
 F 1 "LG R971-KN-1" H 2300 4731 60  0001 C CNN
 F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2550 4700 60  0001 L CNN
 F 3 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493888/LH%20R974.pdf" H 2550 4800 60  0001 L CNN
@@ -317,7 +317,7 @@ AR Path="/5F8460BD/5FBAB8D2" Ref="D5"  Part="1"
 AR Path="/5FBD4C51/5FBAB8D2" Ref="D?"  Part="1" 
 AR Path="/5FBEFA6B/5FBAB8D2" Ref="D?"  Part="1" 
 AR Path="/5FC88692/5FBAB8D2" Ref="D6"  Part="1" 
-F 0 "D6" H 3050 4837 60  0000 C CNN
+F 0 "D5" H 3050 4837 60  0000 C CNN
 F 1 "LG R971-KN-1" H 3050 4731 60  0001 C CNN
 F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3300 4700 60  0001 L CNN
 F 3 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493888/LH%20R974.pdf" H 3300 4800 60  0001 L CNN
@@ -339,7 +339,7 @@ U 1 1 5FBA17A5
 P 1800 3200
 AR Path="/5F8460BD/5FBA17A5" Ref="F3"  Part="1" 
 AR Path="/5FC88692/5FBA17A5" Ref="F4"  Part="1" 
-F 0 "F4" V 1575 3200 50  0000 C CNN
+F 0 "F3" V 1575 3200 50  0000 C CNN
 F 1 "750 mA" V 1666 3200 50  0000 C CNN
 F 2 "Resistor_SMD:R_1812_4532Metric_Pad1.30x3.40mm_HandSolder" H 1850 3000 50  0001 L CNN
 F 3 "https://www.belfuse.com/resources/datasheets/circuitprotection/ds-cp-0zcg-series.pdf" H 1800 3200 50  0001 C CNN
@@ -360,7 +360,7 @@ U 1 1 5FC25A26
 P 4650 3750
 AR Path="/5F8460BD/5FC25A26" Ref="U1"  Part="1" 
 AR Path="/5FC88692/5FC25A26" Ref="U3"  Part="1" 
-F 0 "U3" H 4500 4453 60  0000 C CNN
+F 0 "U1" H 4500 4453 60  0000 C CNN
 F 1 "FT232RL-REEL" H 4500 4347 60  0000 C CNN
 F 2 "digikey-footprints:SSOP-28_W5.30mm" H 4850 3950 60  0001 L CNN
 F 3 "https://www.ftdichip.com/Support/Documents/DataSheets/ICs/DS_FT232R.pdf" H 4850 4050 60  0001 L CNN
@@ -418,7 +418,7 @@ AR Path="/5F8460BD/5FC45593" Ref="#PWR0111"  Part="1"
 AR Path="/5FBD4C51/5FC45593" Ref="#PWR?"  Part="1" 
 AR Path="/5FBEFA6B/5FC45593" Ref="#PWR?"  Part="1" 
 AR Path="/5FC88692/5FC45593" Ref="#PWR0118"  Part="1" 
-F 0 "#PWR0118" H 4450 4950 50  0001 C CNN
+F 0 "#PWR0111" H 4450 4950 50  0001 C CNN
 F 1 "GND" H 4455 5027 50  0000 C CNN
 F 2 "" H 4450 5200 50  0001 C CNN
 F 3 "" H 4450 5200 50  0001 C CNN
@@ -466,7 +466,7 @@ AR Path="/5F917C06/5FC4AC5F" Ref="R?"  Part="1"
 AR Path="/5FBD4C51/5FC4AC5F" Ref="R?"  Part="1" 
 AR Path="/5FBEFA6B/5FC4AC5F" Ref="R?"  Part="1" 
 AR Path="/5FC88692/5FC4AC5F" Ref="R7"  Part="1" 
-F 0 "R7" V 2895 4050 50  0000 C CNN
+F 0 "R5" V 2895 4050 50  0000 C CNN
 F 1 "280" V 2986 4050 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 3140 4040 50  0001 C CNN
 F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 3100 4050 50  0001 C CNN
@@ -484,7 +484,7 @@ AR Path="/5F917C06/5FC4AC5D" Ref="R?"  Part="1"
 AR Path="/5FBD4C51/5FC4AC5D" Ref="R?"  Part="1" 
 AR Path="/5FBEFA6B/5FC4AC5D" Ref="R?"  Part="1" 
 AR Path="/5FC88692/5FC4AC5D" Ref="R4"  Part="1" 
-F 0 "R4" V 2145 4050 50  0000 C CNN
+F 0 "R3" V 2145 4050 50  0000 C CNN
 F 1 "280" V 2236 4050 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 2390 4040 50  0001 C CNN
 F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 2350 4050 50  0001 C CNN
@@ -541,7 +541,7 @@ AR Path="/5F8460BD/5FC69056" Ref="#PWR0112"  Part="1"
 AR Path="/5FBD4C51/5FC69056" Ref="#PWR?"  Part="1" 
 AR Path="/5FBEFA6B/5FC69056" Ref="#PWR?"  Part="1" 
 AR Path="/5FC88692/5FC69056" Ref="#PWR0119"  Part="1" 
-F 0 "#PWR0119" H 6000 4150 50  0001 C CNN
+F 0 "#PWR0112" H 6000 4150 50  0001 C CNN
 F 1 "GND" H 6005 4227 50  0000 C CNN
 F 2 "" H 6000 4400 50  0001 C CNN
 F 3 "" H 6000 4400 50  0001 C CNN
@@ -556,7 +556,7 @@ U 1 1 5FC6DD2C
 P 8550 1600
 AR Path="/5F8460BD/5FC6DD2C" Ref="J1"  Part="1" 
 AR Path="/5FC88692/5FC6DD2C" Ref="J8"  Part="1" 
-F 0 "J8" H 8630 1592 50  0000 L CNN
+F 0 "J1" H 8630 1592 50  0000 L CNN
 F 1 "Conn_01x06" H 8630 1501 50  0000 L CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 8550 1600 50  0001 C CNN
 F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=146256&DocType=Customer+Drawing&DocLang=English" H 8550 1600 50  0001 C CNN
@@ -573,7 +573,7 @@ AR Path="/5F8460BD/5FC700E4" Ref="#PWR0113"  Part="1"
 AR Path="/5FBD4C51/5FC700E4" Ref="#PWR?"  Part="1" 
 AR Path="/5FBEFA6B/5FC700E4" Ref="#PWR?"  Part="1" 
 AR Path="/5FC88692/5FC700E4" Ref="#PWR0120"  Part="1" 
-F 0 "#PWR0120" H 8150 1750 50  0001 C CNN
+F 0 "#PWR0113" H 8150 1750 50  0001 C CNN
 F 1 "GND" H 8155 1827 50  0000 C CNN
 F 2 "" H 8150 2000 50  0001 C CNN
 F 3 "" H 8150 2000 50  0001 C CNN
