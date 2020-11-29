@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
-Sheet 5 5
+Sheet 5 6
 Title "eFuse"
 Date "2020-10-17"
 Rev "9"
@@ -127,7 +127,7 @@ U 1 1 5F9282CA
 P 5050 1900
 F 0 "D1" H 5000 2237 60  0000 C CNN
 F 1 "LH_R974-LP-1" H 5000 2131 60  0000 C CNN
-F 2 "digikey-footprints:0805" H 5250 2100 60  0001 L CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5250 2100 60  0001 L CNN
 F 3 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493888/LH%20R974.pdf" H 5250 2200 60  0001 L CNN
 F 4 "475-1415-1-ND" H 5250 2300 60  0001 L CNN "Digi-Key_PN"
 F 5 "LH R974-LP-1" H 5250 2400 60  0001 L CNN "MPN"
