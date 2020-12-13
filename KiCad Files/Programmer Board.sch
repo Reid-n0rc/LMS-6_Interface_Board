@@ -182,7 +182,7 @@ F 1 "575-4" H 2928 2697 50  0000 L CNN
 F 2 "LMS-6_Interface_Board:575_Banana_Jack" H 3050 3000 60  0001 L CNN
 F 3 "http://keyelco.com/userAssets/file/M65p111.pdf" H 3050 3100 60  0001 L CNN
 F 4 "36-575-4-ND" H 3050 3200 60  0001 L CNN "Digi-Key_PN"
-F 5 "105-1103-001" H 3050 3300 60  0001 L CNN "MPN"
+F 5 "575-4" H 3050 3300 60  0001 L CNN "MPN"
 F 6 "Connectors, Interconnects" H 3050 3400 60  0001 L CNN "Category"
 F 7 "Banana and Tip Connectors - Jacks, Plugs" H 3050 3500 60  0001 L CNN "Family"
 F 8 "http://keyelco.com/userAssets/file/M65p111.pdf" H 3050 3600 60  0001 L CNN "DK_Datasheet_Link"
@@ -240,8 +240,8 @@ F 0 "E4" H 7628 1688 50  0000 L CNN
 F 1 "575-4" H 7628 1597 50  0000 L CNN
 F 2 "LMS-6_Interface_Board:575_Banana_Jack" H 7750 1900 60  0001 L CNN
 F 3 "http://keyelco.com/userAssets/file/M65p111.pdf" H 7750 2000 60  0001 L CNN
-F 4 "J577-ND" H 7750 2100 60  0001 L CNN "Digi-Key_PN"
-F 5 "36-575-4-ND" H 7750 2200 60  0001 L CNN "MPN"
+F 4 "36-575-4-ND" H 7750 2100 60  0001 L CNN "Digi-Key_PN"
+F 5 "575-4" H 7750 2200 60  0001 L CNN "MPN"
 F 6 "Connectors, Interconnects" H 7750 2300 60  0001 L CNN "Category"
 F 7 "Banana and Tip Connectors - Jacks, Plugs" H 7750 2400 60  0001 L CNN "Family"
 F 8 "https://belfuse.com/resources/Johnson/drawings/dr-1051101001.pdf" H 7750 2500 60  0001 L CNN "DK_Datasheet_Link"

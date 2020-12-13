@@ -31,6 +31,8 @@ F 0 "U2" H 7300 4417 50  0000 C CNN
 F 1 "TEC2-1219WI" H 7300 4326 50  0000 C CNN
 F 2 "Converter_DCDC:Converter_DCDC_TRACO_TMR-xxxx_THT" H 7300 3600 50  0001 C CNN
 F 3 "https://www.tracopower.com/products/tec2wi.pdf" H 7300 3450 50  0001 C CNN
+F 4 "TEC2-1219WI" H 7300 3950 50  0001 C CNN "MPN"
+F 5 "TRACO Power" H 7300 3950 50  0001 C CNN "Manufacturer"
 	1    7300 3950
 	1    0    0    -1  
 $EndComp
