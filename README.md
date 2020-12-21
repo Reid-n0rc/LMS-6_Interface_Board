@@ -2,7 +2,7 @@
 Interface to the LMS-6 radiosonde carde edge connector.
 
 This project provides an easy way to connect to the UARTs, in circuit programming of the ST7, and provide power to the LMS6 Radiosonde using a card edge connector.
-[LMS6 and Interface](Doc/LMS6_Interface.jpg)
+![LMS6 and Interface](Doc/LMS6_Interface.jpg?raw=true)
 # Fabrication Notes
 ## Fabrication Files
 File for fabrication are in (./Fabrication) directory.  This contains the gerber files and BOM
