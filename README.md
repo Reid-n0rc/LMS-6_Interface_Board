@@ -19,3 +19,4 @@ J6 has pins 1 and 2 jumpered together to connect the battery power.  The shunt c
 ## UART1
 
 ## UART2
+JP3 needs cut and the alternate postion soldered to receive data from the debugging port. Debugging seial is 8N1 at 500kbits/sec.
